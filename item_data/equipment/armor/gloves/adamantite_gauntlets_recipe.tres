@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="RecipeResource" load_steps=6 format=3 uid="uid://cy8tq245dk7bs"]
+
+[ext_resource type="Resource" path="res://skill_data/metalsmithing_skill.tres" id="1_1ltwb"]
+[ext_resource type="Script" path="res://item_data/item_resource.gd" id="1_qy3ju"]
+[ext_resource type="Script" path="res://item_data/recipe_resource.gd" id="2_ha7pw"]
+[ext_resource type="Resource" path="res://item_data/ingots/adamantite_ingot.tres" id="3_nnuon"]
+[ext_resource type="Resource" path="res://item_data/equipment/armor/gloves/adamantite_gauntlets.tres" id="4_f5pqh"]
+
+[resource]
+script = ExtResource("2_ha7pw")
+associated_skill = ExtResource("1_1ltwb")
+skill_experience = 15.0
+input_items = Array[ExtResource("1_qy3ju")]([ExtResource("3_nnuon")])
+output_items = Array[ExtResource("1_qy3ju")]([ExtResource("4_f5pqh")])
+string_name = "adamantite gauntlets"

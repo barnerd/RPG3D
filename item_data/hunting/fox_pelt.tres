@@ -1,0 +1,7 @@
+[gd_resource type="Resource" script_class="ItemResource" load_steps=2 format=3 uid="uid://brynjuk1vq0qp"]
+
+[ext_resource type="Script" path="res://item_data/item_resource.gd" id="1_x1sis"]
+
+[resource]
+script = ExtResource("1_x1sis")
+string_name = "fox pelt"

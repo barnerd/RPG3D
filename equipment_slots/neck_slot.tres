@@ -1,0 +1,7 @@
+[gd_resource type="Resource" script_class="EquipmentSlot" load_steps=2 format=3 uid="uid://y25ybjjeuans"]
+
+[ext_resource type="Script" path="res://equipment_slots/equipment_slot.gd" id="1_dxcrk"]
+
+[resource]
+script = ExtResource("1_dxcrk")
+string_name = "neck"

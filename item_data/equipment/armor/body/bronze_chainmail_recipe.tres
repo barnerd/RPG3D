@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="RecipeResource" load_steps=6 format=3 uid="uid://daxbufrd4fdle"]
+
+[ext_resource type="Resource" path="res://skill_data/metalsmithing_skill.tres" id="1_fp0r5"]
+[ext_resource type="Script" path="res://item_data/item_resource.gd" id="2_mk0uj"]
+[ext_resource type="Resource" path="res://item_data/ingots/bronze_ingot.tres" id="3_3p4hk"]
+[ext_resource type="Resource" path="res://item_data/equipment/armor/body/bronze_chainmail.tres" id="4_ft600"]
+[ext_resource type="Script" path="res://item_data/recipe_resource.gd" id="5_qbiv5"]
+
+[resource]
+script = ExtResource("5_qbiv5")
+associated_skill = ExtResource("1_fp0r5")
+skill_experience = 7.0
+input_items = Array[ExtResource("2_mk0uj")]([ExtResource("3_3p4hk")])
+output_items = Array[ExtResource("2_mk0uj")]([ExtResource("4_ft600")])
+string_name = "bronze chainmail"

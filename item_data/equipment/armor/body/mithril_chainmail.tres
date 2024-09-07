@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="ArmorResource" load_steps=3 format=3 uid="uid://bxa2yklssa85o"]
+
+[ext_resource type="Script" path="res://item_data/equipment/armor/armor_resource.gd" id="1_41lfd"]
+[ext_resource type="Resource" uid="uid://4dvttcrac551" path="res://equipment_slots/torso_slot.tres" id="2_v7nay"]
+
+[resource]
+script = ExtResource("1_41lfd")
+slot = ExtResource("2_v7nay")
+string_name = "mithril chainmail"

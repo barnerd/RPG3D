@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="OreResource" load_steps=2 format=3 uid="uid://cndnt5hcf8to5"]
+
+[ext_resource type="Script" path="res://item_data/ores/ore_resource.gd" id="1_kc2dj"]
+
+[resource]
+script = ExtResource("1_kc2dj")
+type = 2
+skill_experience = 7.0
+string_name = "iron ore"

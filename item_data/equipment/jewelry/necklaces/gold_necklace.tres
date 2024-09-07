@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="JewelryResource" load_steps=3 format=3 uid="uid://grvtifkvkcb"]
+
+[ext_resource type="Script" path="res://item_data/equipment/jewelry/jewelry_resource.gd" id="1_erxoa"]
+[ext_resource type="Resource" uid="uid://y25ybjjeuans" path="res://equipment_slots/neck_slot.tres" id="2_2l43s"]
+
+[resource]
+script = ExtResource("1_erxoa")
+slot = ExtResource("2_2l43s")
+string_name = "gold necklace"

@@ -1,0 +1,7 @@
+[gd_resource type="Resource" load_steps=2 format=3 uid="uid://bwtr6t03rla1j"]
+
+[ext_resource type="Script" path="res://skill_data/skill_resource.gd" id="1_yjpxt"]
+
+[resource]
+script = ExtResource("1_yjpxt")
+string_name = "logging"

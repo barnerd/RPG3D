@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="RecipeResource" load_steps=6 format=3 uid="uid://dd4j4cql3q1w2"]
+
+[ext_resource type="Resource" path="res://skill_data/metalsmithing_skill.tres" id="1_n2t3w"]
+[ext_resource type="Script" path="res://item_data/item_resource.gd" id="2_scuwa"]
+[ext_resource type="Resource" path="res://item_data/ingots/adamantite_ingot.tres" id="3_68wfa"]
+[ext_resource type="Resource" path="res://item_data/equipment/armor/body/adamantite_breastplate.tres" id="4_1ncyt"]
+[ext_resource type="Script" path="res://item_data/recipe_resource.gd" id="5_80s7s"]
+
+[resource]
+script = ExtResource("5_80s7s")
+associated_skill = ExtResource("1_n2t3w")
+skill_experience = 15.0
+input_items = Array[ExtResource("2_scuwa")]([ExtResource("3_68wfa")])
+output_items = Array[ExtResource("2_scuwa")]([ExtResource("4_1ncyt")])
+string_name = "adamantite breastplate"

@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="RecipeResource" load_steps=6 format=3 uid="uid://c3cvasuyvnn7s"]
+
+[ext_resource type="Resource" path="res://skill_data/metalsmithing_skill.tres" id="1_0okdp"]
+[ext_resource type="Script" path="res://item_data/item_resource.gd" id="2_2gjgu"]
+[ext_resource type="Resource" path="res://item_data/ingots/copper_ingot.tres" id="3_iv1p5"]
+[ext_resource type="Resource" path="res://item_data/equipment/weapons/clubs/copper_mace.tres" id="4_vw6rq"]
+[ext_resource type="Script" path="res://item_data/recipe_resource.gd" id="5_1whdh"]
+
+[resource]
+script = ExtResource("5_1whdh")
+associated_skill = ExtResource("1_0okdp")
+skill_experience = 10.0
+input_items = Array[ExtResource("2_2gjgu")]([ExtResource("3_iv1p5"), ExtResource("3_iv1p5"), ExtResource("3_iv1p5")])
+output_items = Array[ExtResource("2_2gjgu")]([ExtResource("4_vw6rq")])
+string_name = "copper mace"

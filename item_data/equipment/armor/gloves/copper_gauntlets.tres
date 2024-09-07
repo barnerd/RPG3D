@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="EquipmentResource" load_steps=3 format=3 uid="uid://fshfa1gm3r76"]
+
+[ext_resource type="Script" path="res://item_data/equipment/equipment_resource.gd" id="1_2jq5v"]
+[ext_resource type="Resource" uid="uid://dooccky0eih5y" path="res://equipment_slots/hands_slot.tres" id="2_nauhh"]
+
+[resource]
+script = ExtResource("1_2jq5v")
+slot = ExtResource("2_nauhh")
+string_name = "copper gauntlets"

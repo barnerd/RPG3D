@@ -1,0 +1,7 @@
+[gd_resource type="Resource" script_class="ItemResource" load_steps=2 format=3 uid="uid://cdepnmxvhc8ax"]
+
+[ext_resource type="Script" path="res://item_data/item_resource.gd" id="1_3lu7e"]
+
+[resource]
+script = ExtResource("1_3lu7e")
+string_name = "rabbit hide"

@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://bf1xm4q6cyd31"]
+
+[ext_resource type="Script" path="res://item_data/food/game_food.gd" id="1_bgk2i"]
+
+[node name="GameFood" type="Node"]
+script = ExtResource("1_bgk2i")

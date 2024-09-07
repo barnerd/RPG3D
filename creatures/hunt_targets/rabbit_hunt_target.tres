@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="HuntTargetResource" load_steps=6 format=3 uid="uid://57ki30x0lorg"]
+
+[ext_resource type="Script" path="res://item_data/item_resource.gd" id="1_5kh6x"]
+[ext_resource type="Resource" uid="uid://cqljx336mvrke" path="res://item_data/hunting/bones.tres" id="2_mq6vc"]
+[ext_resource type="Resource" uid="uid://cdepnmxvhc8ax" path="res://item_data/hunting/rabbit_hide.tres" id="3_n7851"]
+[ext_resource type="Resource" uid="uid://df6504gwa3i1q" path="res://item_data/hunting/raw_rabbit_meat.tres" id="4_uendb"]
+[ext_resource type="Script" path="res://creatures/hunt_targets/hunt_target_resource.gd" id="5_56l1y"]
+
+[resource]
+script = ExtResource("5_56l1y")
+string_name = "rabbit"
+skill_experience = 5.0
+drops = Array[ExtResource("1_5kh6x")]([ExtResource("2_mq6vc"), ExtResource("3_n7851"), ExtResource("4_uendb")])

@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="RecipeResource" load_steps=6 format=3 uid="uid://2w5yaop1v0ig"]
+
+[ext_resource type="Script" path="res://item_data/item_resource.gd" id="1_jv865"]
+[ext_resource type="Resource" path="res://skill_data/metalsmithing_skill.tres" id="1_mfy11"]
+[ext_resource type="Script" path="res://item_data/recipe_resource.gd" id="2_sbugm"]
+[ext_resource type="Resource" path="res://item_data/ingots/adamantite_ingot.tres" id="3_7bdeh"]
+[ext_resource type="Resource" path="res://item_data/equipment/weapons/clubs/adamantite_mace.tres" id="4_j47uh"]
+
+[resource]
+script = ExtResource("2_sbugm")
+associated_skill = ExtResource("1_mfy11")
+skill_experience = 40.0
+input_items = Array[ExtResource("1_jv865")]([ExtResource("3_7bdeh"), ExtResource("3_7bdeh"), ExtResource("3_7bdeh")])
+output_items = Array[ExtResource("1_jv865")]([ExtResource("4_j47uh")])
+string_name = "adamantite mace"

@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="WeaponResource" load_steps=4 format=3 uid="uid://d21mjceu5p0ip"]
+
+[ext_resource type="Script" path="res://item_data/equipment/weapons/weapon_resource.gd" id="1_648ap"]
+[ext_resource type="Resource" uid="uid://biojnprhb5j63" path="res://equipment_slots/main_hand_slot.tres" id="2_ey27x"]
+[ext_resource type="Resource" uid="uid://ds45yeutx3vts" path="res://equipment_slots/weapon_types/long_sword_type.tres" id="3_6qbig"]
+
+[resource]
+script = ExtResource("1_648ap")
+weapon_type = ExtResource("3_6qbig")
+slot = ExtResource("2_ey27x")
+string_name = "bronze long sword"

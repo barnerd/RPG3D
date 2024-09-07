@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="EquipmentResource" load_steps=3 format=3 uid="uid://bij7ws35e41dx"]
+
+[ext_resource type="Script" path="res://item_data/equipment/equipment_resource.gd" id="1_ip18o"]
+[ext_resource type="Resource" uid="uid://dooccky0eih5y" path="res://equipment_slots/hands_slot.tres" id="2_5vwu8"]
+
+[resource]
+script = ExtResource("1_ip18o")
+slot = ExtResource("2_5vwu8")
+string_name = "mithril gauntlets"

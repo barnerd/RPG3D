@@ -1,0 +1,7 @@
+[gd_resource type="Resource" script_class="ItemResource" load_steps=2 format=3 uid="uid://crlte66l4ria"]
+
+[ext_resource type="Script" path="res://item_data/item_resource.gd" id="1_ojclo"]
+
+[resource]
+script = ExtResource("1_ojclo")
+string_name = "raw deer meat"

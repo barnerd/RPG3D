@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="RecipeResource" load_steps=6 format=3 uid="uid://424hdhxtvao7"]
+
+[ext_resource type="Resource" path="res://skill_data/smelting_skill.tres" id="1_1ax5n"]
+[ext_resource type="Script" path="res://item_data/item_resource.gd" id="1_vdrgh"]
+[ext_resource type="Resource" path="res://item_data/ores/copper_ore.tres" id="2_j1s2r"]
+[ext_resource type="Resource" path="res://item_data/ingots/copper_ingot.tres" id="3_qpwdo"]
+[ext_resource type="Script" path="res://item_data/recipe_resource.gd" id="4_u7ai4"]
+
+[resource]
+script = ExtResource("4_u7ai4")
+associated_skill = ExtResource("1_1ax5n")
+skill_experience = 4.0
+input_items = Array[ExtResource("1_vdrgh")]([ExtResource("2_j1s2r")])
+output_items = Array[ExtResource("1_vdrgh")]([ExtResource("3_qpwdo")])
+string_name = "copper ingot"

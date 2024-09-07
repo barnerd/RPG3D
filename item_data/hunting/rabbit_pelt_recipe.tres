@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="RecipeResource" load_steps=6 format=3 uid="uid://bkc2eqjd8gda8"]
+
+[ext_resource type="Resource" path="res://skill_data/leatherworking_skill.tres" id="1_50v5v"]
+[ext_resource type="Script" path="res://item_data/item_resource.gd" id="2_qwphj"]
+[ext_resource type="Resource" uid="uid://cdepnmxvhc8ax" path="res://item_data/hunting/rabbit_hide.tres" id="3_ehf3u"]
+[ext_resource type="Resource" uid="uid://bnriqqum3o5dt" path="res://item_data/hunting/rabbit_pelt.tres" id="4_cjkt8"]
+[ext_resource type="Script" path="res://item_data/recipe_resource.gd" id="5_itame"]
+
+[resource]
+script = ExtResource("5_itame")
+associated_skill = ExtResource("1_50v5v")
+skill_experience = 5.0
+input_items = Array[ExtResource("2_qwphj")]([ExtResource("3_ehf3u")])
+output_items = Array[ExtResource("2_qwphj")]([ExtResource("4_cjkt8")])
+string_name = "rabbit pelt"

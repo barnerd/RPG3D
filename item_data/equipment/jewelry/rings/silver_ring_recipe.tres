@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="RecipeResource" load_steps=6 format=3 uid="uid://djlg5gf5ubf81"]
+
+[ext_resource type="Resource" path="res://skill_data/metalsmithing_skill.tres" id="1_68w4v"]
+[ext_resource type="Script" path="res://item_data/item_resource.gd" id="1_dhbbq"]
+[ext_resource type="Script" path="res://item_data/recipe_resource.gd" id="2_r00rl"]
+[ext_resource type="Resource" path="res://item_data/ingots/silver_ingot.tres" id="3_fx0qf"]
+[ext_resource type="Resource" path="res://item_data/equipment/jewelry/rings/silver_ring.tres" id="4_2nwki"]
+
+[resource]
+script = ExtResource("2_r00rl")
+associated_skill = ExtResource("1_68w4v")
+skill_experience = 5.0
+input_items = Array[ExtResource("1_dhbbq")]([ExtResource("3_fx0qf")])
+output_items = Array[ExtResource("1_dhbbq")]([ExtResource("4_2nwki")])
+string_name = "silver ring"

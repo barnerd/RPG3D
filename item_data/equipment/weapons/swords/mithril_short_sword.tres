@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="WeaponResource" load_steps=4 format=3 uid="uid://cb8shaeiyuetb"]
+
+[ext_resource type="Script" path="res://item_data/equipment/weapons/weapon_resource.gd" id="1_ivdv6"]
+[ext_resource type="Resource" uid="uid://biojnprhb5j63" path="res://equipment_slots/main_hand_slot.tres" id="2_w680a"]
+[ext_resource type="Resource" uid="uid://ds45yeutx3vts" path="res://equipment_slots/weapon_types/long_sword_type.tres" id="3_i1axx"]
+
+[resource]
+script = ExtResource("1_ivdv6")
+weapon_type = ExtResource("3_i1axx")
+slot = ExtResource("2_w680a")
+string_name = "mithril short sword"

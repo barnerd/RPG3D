@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="RecipeResource" load_steps=6 format=3 uid="uid://ds3owwpvcr2ng"]
+
+[ext_resource type="Resource" path="res://skill_data/metalsmithing_skill.tres" id="1_jkawa"]
+[ext_resource type="Script" path="res://item_data/item_resource.gd" id="2_x221q"]
+[ext_resource type="Resource" path="res://item_data/ingots/bronze_ingot.tres" id="3_v3nk2"]
+[ext_resource type="Resource" path="res://item_data/equipment/weapons/swords/bronze_dagger.tres" id="4_t105k"]
+[ext_resource type="Script" path="res://item_data/recipe_resource.gd" id="5_eyklx"]
+
+[resource]
+script = ExtResource("5_eyklx")
+associated_skill = ExtResource("1_jkawa")
+skill_experience = 8.0
+input_items = Array[ExtResource("2_x221q")]([ExtResource("3_v3nk2")])
+output_items = Array[ExtResource("2_x221q")]([ExtResource("4_t105k")])
+string_name = "bronze dagger"

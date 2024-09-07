@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="RecipeResource" load_steps=6 format=3 uid="uid://tnul4hw3r27y"]
+
+[ext_resource type="Resource" path="res://skill_data/leatherworking_skill.tres" id="1_five4"]
+[ext_resource type="Script" path="res://item_data/item_resource.gd" id="2_7b4jb"]
+[ext_resource type="Resource" uid="uid://0w0lhffwir8p" path="res://item_data/hunting/raccoon_hide.tres" id="3_vyybt"]
+[ext_resource type="Resource" uid="uid://sem3df835ho5" path="res://item_data/hunting/raccoon_pelt.tres" id="4_4gvpp"]
+[ext_resource type="Script" path="res://item_data/recipe_resource.gd" id="5_entm4"]
+
+[resource]
+script = ExtResource("5_entm4")
+associated_skill = ExtResource("1_five4")
+skill_experience = 8.0
+input_items = Array[ExtResource("2_7b4jb")]([ExtResource("3_vyybt")])
+output_items = Array[ExtResource("2_7b4jb")]([ExtResource("4_4gvpp")])
+string_name = "raccoon pelt"

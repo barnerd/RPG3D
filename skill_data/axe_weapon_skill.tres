@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="WeaponSkillResource" load_steps=3 format=3 uid="uid://dn6fxwfdrgqjw"]
+
+[ext_resource type="Script" path="res://skill_data/weapon_skill_resource.gd" id="1_y46cj"]
+[ext_resource type="Resource" uid="uid://bh06p5aaou2rh" path="res://equipment_slots/weapon_types/axe_type.tres" id="2_8jwim"]
+
+[resource]
+script = ExtResource("1_y46cj")
+weapon_type = ExtResource("2_8jwim")
+string_name = "axe"

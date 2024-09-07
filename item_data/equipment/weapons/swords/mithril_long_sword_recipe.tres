@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="RecipeResource" load_steps=6 format=3 uid="uid://63lgsyim3xlj"]
+
+[ext_resource type="Resource" path="res://skill_data/metalsmithing_skill.tres" id="1_kpx8u"]
+[ext_resource type="Script" path="res://item_data/item_resource.gd" id="2_3dv0n"]
+[ext_resource type="Resource" path="res://item_data/ingots/mithril_ingot.tres" id="3_7yp26"]
+[ext_resource type="Resource" path="res://item_data/equipment/weapons/swords/mithril_long_sword.tres" id="4_fmcla"]
+[ext_resource type="Script" path="res://item_data/recipe_resource.gd" id="5_jc4xm"]
+
+[resource]
+script = ExtResource("5_jc4xm")
+associated_skill = ExtResource("1_kpx8u")
+skill_experience = 12.0
+input_items = Array[ExtResource("2_3dv0n")]([ExtResource("3_7yp26")])
+output_items = Array[ExtResource("2_3dv0n")]([ExtResource("4_fmcla")])
+string_name = "mithril long sword"

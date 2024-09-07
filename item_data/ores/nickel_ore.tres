@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="OreResource" load_steps=2 format=3 uid="uid://gf52jpsdtemt"]
+
+[ext_resource type="Script" path="res://item_data/ores/ore_resource.gd" id="1_be0dt"]
+
+[resource]
+script = ExtResource("1_be0dt")
+type = 3
+skill_experience = 4.0
+string_name = "nickel ore"

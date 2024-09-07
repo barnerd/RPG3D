@@ -1,0 +1,7 @@
+[gd_resource type="Resource" script_class="WeaponType" load_steps=2 format=3 uid="uid://bg0hde4cgu880"]
+
+[ext_resource type="Script" path="res://equipment_slots/weapon_types/weapon_type.gd" id="1_a8nc1"]
+
+[resource]
+script = ExtResource("1_a8nc1")
+string_name = "short sword"

@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="RecipeResource" load_steps=6 format=3 uid="uid://bml02hkq8q06c"]
+
+[ext_resource type="Resource" path="res://skill_data/metalsmithing_skill.tres" id="1_e788u"]
+[ext_resource type="Script" path="res://item_data/item_resource.gd" id="2_hvsge"]
+[ext_resource type="Resource" path="res://item_data/ingots/iron_ingot.tres" id="3_1vc4h"]
+[ext_resource type="Script" path="res://item_data/recipe_resource.gd" id="3_7afrc"]
+[ext_resource type="Resource" path="res://item_data/equipment/armor/gloves/iron_gauntlets.tres" id="4_jbve4"]
+
+[resource]
+script = ExtResource("3_7afrc")
+associated_skill = ExtResource("1_e788u")
+skill_experience = 10.0
+input_items = Array[ExtResource("2_hvsge")]([ExtResource("3_1vc4h")])
+output_items = Array[ExtResource("2_hvsge")]([ExtResource("4_jbve4")])
+string_name = "iron gauntlets"

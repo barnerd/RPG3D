@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="RecipeResource" load_steps=6 format=3 uid="uid://dh0jdo57imc65"]
+
+[ext_resource type="Resource" path="res://skill_data/metalsmithing_skill.tres" id="1_mapqf"]
+[ext_resource type="Script" path="res://item_data/item_resource.gd" id="2_001ud"]
+[ext_resource type="Resource" path="res://item_data/ingots/copper_ingot.tres" id="3_mwvf7"]
+[ext_resource type="Resource" path="res://item_data/equipment/armor/helmets/copper_helm.tres" id="4_1jrci"]
+[ext_resource type="Script" path="res://item_data/recipe_resource.gd" id="5_vf6fq"]
+
+[resource]
+script = ExtResource("5_vf6fq")
+associated_skill = ExtResource("1_mapqf")
+skill_experience = 3.0
+input_items = Array[ExtResource("2_001ud")]([ExtResource("3_mwvf7")])
+output_items = Array[ExtResource("2_001ud")]([ExtResource("4_1jrci")])
+string_name = "copper helm"

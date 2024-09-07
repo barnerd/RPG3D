@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="RecipeResource" load_steps=6 format=3 uid="uid://0ydu42ki7uoe"]
+
+[ext_resource type="Resource" path="res://skill_data/metalsmithing_skill.tres" id="1_fk13f"]
+[ext_resource type="Script" path="res://item_data/item_resource.gd" id="2_y65ti"]
+[ext_resource type="Resource" path="res://item_data/ingots/adamantite_ingot.tres" id="3_woimq"]
+[ext_resource type="Resource" path="res://item_data/equipment/weapons/swords/adamantite_long_sword.tres" id="4_bq3u4"]
+[ext_resource type="Script" path="res://item_data/recipe_resource.gd" id="5_0j5vf"]
+
+[resource]
+script = ExtResource("5_0j5vf")
+associated_skill = ExtResource("1_fk13f")
+skill_experience = 15.0
+input_items = Array[ExtResource("2_y65ti")]([ExtResource("3_woimq")])
+output_items = Array[ExtResource("2_y65ti")]([ExtResource("4_bq3u4")])
+string_name = "adamantite long sword"

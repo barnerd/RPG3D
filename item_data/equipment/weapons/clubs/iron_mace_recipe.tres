@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="RecipeResource" load_steps=6 format=3 uid="uid://ceq1h580pyr1y"]
+
+[ext_resource type="Resource" path="res://skill_data/metalsmithing_skill.tres" id="1_6i3pg"]
+[ext_resource type="Script" path="res://item_data/item_resource.gd" id="2_4cvwx"]
+[ext_resource type="Resource" path="res://item_data/ingots/iron_ingot.tres" id="3_cw2l1"]
+[ext_resource type="Resource" path="res://item_data/equipment/weapons/clubs/iron_mace.tres" id="4_0yqdi"]
+[ext_resource type="Script" path="res://item_data/recipe_resource.gd" id="5_lgyuc"]
+
+[resource]
+script = ExtResource("5_lgyuc")
+associated_skill = ExtResource("1_6i3pg")
+skill_experience = 20.0
+input_items = Array[ExtResource("2_4cvwx")]([ExtResource("3_cw2l1"), ExtResource("3_cw2l1"), ExtResource("3_cw2l1")])
+output_items = Array[ExtResource("2_4cvwx")]([ExtResource("4_0yqdi")])
+string_name = "iron mace"

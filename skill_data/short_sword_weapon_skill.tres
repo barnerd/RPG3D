@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="WeaponSkillResource" load_steps=3 format=3 uid="uid://61msfmnvh7s1"]
+
+[ext_resource type="Script" path="res://skill_data/weapon_skill_resource.gd" id="1_dmvvl"]
+[ext_resource type="Resource" uid="uid://bg0hde4cgu880" path="res://equipment_slots/weapon_types/short_sword_type.tres" id="2_un3n5"]
+
+[resource]
+script = ExtResource("1_dmvvl")
+weapon_type = ExtResource("2_un3n5")
+string_name = "short sword"

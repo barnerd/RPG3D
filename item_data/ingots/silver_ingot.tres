@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="IngotResource" load_steps=2 format=3 uid="uid://c7oimvl78p45o"]
+
+[ext_resource type="Script" path="res://item_data/ingots/ingot_resource.gd" id="1_frcrv"]
+
+[resource]
+script = ExtResource("1_frcrv")
+type = 5
+string_name = "silver ingot"

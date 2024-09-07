@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="RecipeResource" load_steps=6 format=3 uid="uid://dqwtouqev70e7"]
+
+[ext_resource type="Resource" path="res://skill_data/smelting_skill.tres" id="1_73x7v"]
+[ext_resource type="Script" path="res://item_data/item_resource.gd" id="1_r6f0o"]
+[ext_resource type="Resource" path="res://item_data/ores/iron_ore.tres" id="2_u6xmw"]
+[ext_resource type="Resource" path="res://item_data/ingots/iron_ingot.tres" id="3_sst7t"]
+[ext_resource type="Script" path="res://item_data/recipe_resource.gd" id="4_lo185"]
+
+[resource]
+script = ExtResource("4_lo185")
+associated_skill = ExtResource("1_73x7v")
+skill_experience = 7.0
+input_items = Array[ExtResource("1_r6f0o")]([ExtResource("2_u6xmw")])
+output_items = Array[ExtResource("1_r6f0o")]([ExtResource("3_sst7t")])
+string_name = "iron ingot"

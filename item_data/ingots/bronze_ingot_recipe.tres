@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="RecipeResource" load_steps=7 format=3 uid="uid://coofqpdt6qbq5"]
+
+[ext_resource type="Resource" path="res://skill_data/smelting_skill.tres" id="1_dc8ia"]
+[ext_resource type="Script" path="res://item_data/item_resource.gd" id="1_q1ahg"]
+[ext_resource type="Resource" path="res://item_data/ingots/copper_ingot.tres" id="2_x1cdj"]
+[ext_resource type="Resource" path="res://item_data/ingots/tin_ingot.tres" id="3_5ssbw"]
+[ext_resource type="Resource" path="res://item_data/ingots/bronze_ingot.tres" id="4_qegau"]
+[ext_resource type="Script" path="res://item_data/recipe_resource.gd" id="4_x3yd1"]
+
+[resource]
+script = ExtResource("4_x3yd1")
+associated_skill = ExtResource("1_dc8ia")
+skill_experience = 5.0
+input_items = Array[ExtResource("1_q1ahg")]([ExtResource("2_x1cdj"), ExtResource("3_5ssbw")])
+output_items = Array[ExtResource("1_q1ahg")]([ExtResource("4_qegau"), ExtResource("4_qegau")])
+string_name = "bronze ingot"

@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="WeaponResource" load_steps=4 format=3 uid="uid://cd1dtekra1icg"]
+
+[ext_resource type="Script" path="res://item_data/equipment/weapons/weapon_resource.gd" id="1_u0k1l"]
+[ext_resource type="Resource" uid="uid://biojnprhb5j63" path="res://equipment_slots/main_hand_slot.tres" id="2_qi1xa"]
+[ext_resource type="Resource" uid="uid://bg0hde4cgu880" path="res://equipment_slots/weapon_types/short_sword_type.tres" id="3_uvwem"]
+
+[resource]
+script = ExtResource("1_u0k1l")
+weapon_type = ExtResource("3_uvwem")
+slot = ExtResource("2_qi1xa")
+string_name = "bronze short sword"

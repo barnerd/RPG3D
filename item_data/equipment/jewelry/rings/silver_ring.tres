@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="JewelryResource" load_steps=3 format=3 uid="uid://bnm5vrhn6lseo"]
+
+[ext_resource type="Script" path="res://item_data/equipment/jewelry/jewelry_resource.gd" id="1_6epkv"]
+[ext_resource type="Resource" uid="uid://d4l5wc2mbr260" path="res://equipment_slots/finger_slot.tres" id="2_5yoiu"]
+
+[resource]
+script = ExtResource("1_6epkv")
+slot = ExtResource("2_5yoiu")
+string_name = "silver ring"

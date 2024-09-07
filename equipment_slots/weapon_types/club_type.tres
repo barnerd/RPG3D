@@ -1,0 +1,7 @@
+[gd_resource type="Resource" script_class="WeaponType" load_steps=2 format=3 uid="uid://bebpql3hp3p8r"]
+
+[ext_resource type="Script" path="res://equipment_slots/weapon_types/weapon_type.gd" id="1_6auff"]
+
+[resource]
+script = ExtResource("1_6auff")
+string_name = "club"

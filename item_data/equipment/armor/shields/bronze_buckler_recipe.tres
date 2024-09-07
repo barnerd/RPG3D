@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="RecipeResource" load_steps=6 format=3 uid="uid://by7ir3hrb26kj"]
+
+[ext_resource type="Resource" path="res://skill_data/metalsmithing_skill.tres" id="1_c870m"]
+[ext_resource type="Script" path="res://item_data/item_resource.gd" id="1_kfmb8"]
+[ext_resource type="Script" path="res://item_data/recipe_resource.gd" id="2_gbhff"]
+[ext_resource type="Resource" path="res://item_data/ingots/bronze_ingot.tres" id="3_2nmpd"]
+[ext_resource type="Resource" path="res://item_data/equipment/armor/shields/bronze_buckler.tres" id="4_n3cti"]
+
+[resource]
+script = ExtResource("2_gbhff")
+associated_skill = ExtResource("1_c870m")
+skill_experience = 7.0
+input_items = Array[ExtResource("1_kfmb8")]([ExtResource("3_2nmpd")])
+output_items = Array[ExtResource("1_kfmb8")]([ExtResource("4_n3cti")])
+string_name = "bronze buckler"

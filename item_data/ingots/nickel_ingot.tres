@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="IngotResource" load_steps=2 format=3 uid="uid://ej0u4gvdeo7t"]
+
+[ext_resource type="Script" path="res://item_data/ingots/ingot_resource.gd" id="1_fpgjb"]
+
+[resource]
+script = ExtResource("1_fpgjb")
+type = 4
+string_name = "nickel ingot"

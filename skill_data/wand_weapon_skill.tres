@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="WeaponSkillResource" load_steps=3 format=3 uid="uid://dkaumdnavlysd"]
+
+[ext_resource type="Script" path="res://skill_data/weapon_skill_resource.gd" id="1_ltrb4"]
+[ext_resource type="Resource" uid="uid://bd8qttljsvyc0" path="res://equipment_slots/weapon_types/wand_type.tres" id="2_4x1xj"]
+
+[resource]
+script = ExtResource("1_ltrb4")
+weapon_type = ExtResource("2_4x1xj")
+string_name = "wand"

@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="RecipeResource" load_steps=6 format=3 uid="uid://dhd1qltp84snb"]
+
+[ext_resource type="Resource" path="res://skill_data/metalsmithing_skill.tres" id="1_e07dp"]
+[ext_resource type="Script" path="res://item_data/item_resource.gd" id="2_f16cq"]
+[ext_resource type="Resource" path="res://item_data/ingots/mithril_ingot.tres" id="3_nvq0o"]
+[ext_resource type="Resource" path="res://item_data/equipment/weapons/clubs/mithril_mace.tres" id="4_2bhqf"]
+[ext_resource type="Script" path="res://item_data/recipe_resource.gd" id="5_t6yyo"]
+
+[resource]
+script = ExtResource("5_t6yyo")
+associated_skill = ExtResource("1_e07dp")
+skill_experience = 30.0
+input_items = Array[ExtResource("2_f16cq")]([ExtResource("3_nvq0o"), ExtResource("3_nvq0o"), ExtResource("3_nvq0o")])
+output_items = Array[ExtResource("2_f16cq")]([ExtResource("4_2bhqf")])
+string_name = "mithril mace"

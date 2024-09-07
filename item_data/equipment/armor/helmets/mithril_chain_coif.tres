@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="ArmorResource" load_steps=3 format=3 uid="uid://ckjapq615yj7t"]
+
+[ext_resource type="Script" path="res://item_data/equipment/armor/armor_resource.gd" id="1_41lfd"]
+[ext_resource type="Resource" uid="uid://268rnc6knitb" path="res://equipment_slots/head_slot.tres" id="2_6wf7r"]
+
+[resource]
+script = ExtResource("1_41lfd")
+slot = ExtResource("2_6wf7r")
+string_name = "mithril chain coif"

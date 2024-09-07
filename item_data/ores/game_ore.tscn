@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://deer57mjeuu8a"]
+
+[ext_resource type="Script" path="res://item_data/ores/game_ore.gd" id="1_iun86"]
+
+[node name="GameOre" type="Node"]
+script = ExtResource("1_iun86")

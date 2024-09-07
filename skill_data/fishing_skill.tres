@@ -1,0 +1,7 @@
+[gd_resource type="Resource" load_steps=2 format=3 uid="uid://c55vwh2a1ekfw"]
+
+[ext_resource type="Script" path="res://skill_data/skill_resource.gd" id="1_76bhy"]
+
+[resource]
+script = ExtResource("1_76bhy")
+string_name = "fishing"

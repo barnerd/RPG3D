@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="RecipeResource" load_steps=6 format=3 uid="uid://du2ier3yb1efc"]
+
+[ext_resource type="Script" path="res://item_data/item_resource.gd" id="1_xkmdj"]
+[ext_resource type="Resource" uid="uid://bj66petl0d3xt" path="res://skill_data/cooking_skill.tres" id="1_yawbn"]
+[ext_resource type="Script" path="res://item_data/recipe_resource.gd" id="2_gffv5"]
+[ext_resource type="Resource" uid="uid://crlte66l4ria" path="res://item_data/hunting/raw_deer_meat.tres" id="3_hj200"]
+[ext_resource type="Resource" uid="uid://baag2plf1ssvq" path="res://item_data/food/deer_meat.tres" id="4_1fnie"]
+
+[resource]
+script = ExtResource("2_gffv5")
+associated_skill = ExtResource("1_yawbn")
+skill_experience = 10.0
+input_items = Array[ExtResource("1_xkmdj")]([ExtResource("3_hj200")])
+output_items = Array[ExtResource("1_xkmdj")]([ExtResource("4_1fnie")])
+string_name = "deer meat"

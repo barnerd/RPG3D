@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="ArmorResource" load_steps=3 format=3 uid="uid://bv8sbfyfxmm7a"]
+
+[ext_resource type="Script" path="res://item_data/equipment/armor/armor_resource.gd" id="1_imn0i"]
+[ext_resource type="Resource" path="res://equipment_slots/head_slot.tres" id="2_q7m8u"]
+
+[resource]
+script = ExtResource("1_imn0i")
+slot = ExtResource("2_q7m8u")
+string_name = "bronze helm"

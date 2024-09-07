@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="RecipeResource" load_steps=6 format=3 uid="uid://djgnd4q22eso3"]
+
+[ext_resource type="Script" path="res://item_data/item_resource.gd" id="1_01pim"]
+[ext_resource type="Resource" path="res://skill_data/metalsmithing_skill.tres" id="1_5xmo4"]
+[ext_resource type="Script" path="res://item_data/recipe_resource.gd" id="2_7vn4q"]
+[ext_resource type="Resource" path="res://item_data/ingots/gold_ingot.tres" id="3_uo4i6"]
+[ext_resource type="Resource" path="res://item_data/equipment/jewelry/necklaces/gold_necklace.tres" id="4_ix8f8"]
+
+[resource]
+script = ExtResource("2_7vn4q")
+associated_skill = ExtResource("1_5xmo4")
+skill_experience = 10.0
+input_items = Array[ExtResource("1_01pim")]([ExtResource("3_uo4i6")])
+output_items = Array[ExtResource("1_01pim")]([ExtResource("4_ix8f8")])
+string_name = "gold necklace"

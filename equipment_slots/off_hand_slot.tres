@@ -1,0 +1,7 @@
+[gd_resource type="Resource" script_class="EquipmentSlot" load_steps=2 format=3 uid="uid://d0eusu8rnrhja"]
+
+[ext_resource type="Script" path="res://equipment_slots/equipment_slot.gd" id="1_0ykbo"]
+
+[resource]
+script = ExtResource("1_0ykbo")
+string_name = "off hand"

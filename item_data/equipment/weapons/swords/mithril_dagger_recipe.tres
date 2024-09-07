@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="RecipeResource" load_steps=6 format=3 uid="uid://c6r3bh3rdv3se"]
+
+[ext_resource type="Resource" path="res://skill_data/metalsmithing_skill.tres" id="1_6r6s3"]
+[ext_resource type="Script" path="res://item_data/item_resource.gd" id="2_r25ny"]
+[ext_resource type="Resource" path="res://item_data/ingots/mithril_ingot.tres" id="3_taudn"]
+[ext_resource type="Resource" path="res://item_data/equipment/weapons/swords/mithril_dagger.tres" id="4_k6txw"]
+[ext_resource type="Script" path="res://item_data/recipe_resource.gd" id="5_1gh3s"]
+
+[resource]
+script = ExtResource("5_1gh3s")
+associated_skill = ExtResource("1_6r6s3")
+skill_experience = 12.0
+input_items = Array[ExtResource("2_r25ny")]([ExtResource("3_taudn")])
+output_items = Array[ExtResource("2_r25ny")]([ExtResource("4_k6txw")])
+string_name = "mithril dagger"

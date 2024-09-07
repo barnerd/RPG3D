@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="RecipeResource" load_steps=6 format=3 uid="uid://cwp71fbocmgvy"]
+
+[ext_resource type="Resource" path="res://skill_data/metalsmithing_skill.tres" id="1_ixkrc"]
+[ext_resource type="Script" path="res://item_data/item_resource.gd" id="1_kfmb8"]
+[ext_resource type="Script" path="res://item_data/recipe_resource.gd" id="2_gbhff"]
+[ext_resource type="Resource" path="res://item_data/ingots/mithril_ingot.tres" id="3_2o2rg"]
+[ext_resource type="Resource" path="res://item_data/equipment/armor/shields/mithril_buckler.tres" id="4_8b4ia"]
+
+[resource]
+script = ExtResource("2_gbhff")
+associated_skill = ExtResource("1_ixkrc")
+skill_experience = 13.0
+input_items = Array[ExtResource("1_kfmb8")]([ExtResource("3_2o2rg")])
+output_items = Array[ExtResource("1_kfmb8")]([ExtResource("4_8b4ia")])
+string_name = "mithril buckler"

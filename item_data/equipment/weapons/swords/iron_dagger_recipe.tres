@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="RecipeResource" load_steps=6 format=3 uid="uid://cdkbt3erupao6"]
+
+[ext_resource type="Resource" path="res://skill_data/metalsmithing_skill.tres" id="1_ylwow"]
+[ext_resource type="Script" path="res://item_data/item_resource.gd" id="2_houfk"]
+[ext_resource type="Resource" path="res://item_data/ingots/iron_ingot.tres" id="3_gc6l6"]
+[ext_resource type="Resource" path="res://item_data/equipment/weapons/swords/iron_dagger.tres" id="4_434jq"]
+[ext_resource type="Script" path="res://item_data/recipe_resource.gd" id="5_4j03y"]
+
+[resource]
+script = ExtResource("5_4j03y")
+associated_skill = ExtResource("1_ylwow")
+skill_experience = 10.0
+input_items = Array[ExtResource("2_houfk")]([ExtResource("3_gc6l6")])
+output_items = Array[ExtResource("2_houfk")]([ExtResource("4_434jq")])
+string_name = "iron dagger"

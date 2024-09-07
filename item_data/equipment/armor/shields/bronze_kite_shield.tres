@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="ArmorResource" load_steps=3 format=3 uid="uid://cvi5ogphrycf6"]
+
+[ext_resource type="Script" path="res://item_data/equipment/armor/armor_resource.gd" id="1_sjt5k"]
+[ext_resource type="Resource" uid="uid://d0eusu8rnrhja" path="res://equipment_slots/off_hand_slot.tres" id="2_vno4j"]
+
+[resource]
+script = ExtResource("1_sjt5k")
+slot = ExtResource("2_vno4j")
+string_name = "bronze kite shield"

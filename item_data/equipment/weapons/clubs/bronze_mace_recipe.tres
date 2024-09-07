@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="RecipeResource" load_steps=6 format=3 uid="uid://b008xi2n0e11y"]
+
+[ext_resource type="Resource" path="res://skill_data/metalsmithing_skill.tres" id="1_iy8jv"]
+[ext_resource type="Script" path="res://item_data/item_resource.gd" id="2_ttdlq"]
+[ext_resource type="Resource" path="res://item_data/ingots/bronze_ingot.tres" id="3_k05pb"]
+[ext_resource type="Resource" path="res://item_data/equipment/weapons/clubs/bronze_mace.tres" id="4_0y8ik"]
+[ext_resource type="Script" path="res://item_data/recipe_resource.gd" id="5_cddvn"]
+
+[resource]
+script = ExtResource("5_cddvn")
+associated_skill = ExtResource("1_iy8jv")
+skill_experience = 15.0
+input_items = Array[ExtResource("2_ttdlq")]([ExtResource("3_k05pb"), ExtResource("3_k05pb"), ExtResource("3_k05pb")])
+output_items = Array[ExtResource("2_ttdlq")]([ExtResource("4_0y8ik")])
+string_name = "bronze mace"

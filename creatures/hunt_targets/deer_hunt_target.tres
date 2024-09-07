@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="HuntTargetResource" load_steps=6 format=3 uid="uid://d30imxm63v36"]
+
+[ext_resource type="Script" path="res://item_data/item_resource.gd" id="1_2arjd"]
+[ext_resource type="Resource" uid="uid://cqljx336mvrke" path="res://item_data/hunting/bones.tres" id="2_e00cr"]
+[ext_resource type="Resource" uid="uid://dkuqkwsb53pn3" path="res://item_data/hunting/deer_hide.tres" id="3_72woq"]
+[ext_resource type="Resource" uid="uid://crlte66l4ria" path="res://item_data/hunting/raw_deer_meat.tres" id="4_gbl66"]
+[ext_resource type="Script" path="res://creatures/hunt_targets/hunt_target_resource.gd" id="5_qy18y"]
+
+[resource]
+script = ExtResource("5_qy18y")
+string_name = "deer"
+skill_experience = 10.0
+drops = Array[ExtResource("1_2arjd")]([ExtResource("2_e00cr"), ExtResource("3_72woq"), ExtResource("4_gbl66")])

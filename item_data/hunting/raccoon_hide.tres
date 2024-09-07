@@ -1,0 +1,7 @@
+[gd_resource type="Resource" script_class="ItemResource" load_steps=2 format=3 uid="uid://0w0lhffwir8p"]
+
+[ext_resource type="Script" path="res://item_data/item_resource.gd" id="1_byg30"]
+
+[resource]
+script = ExtResource("1_byg30")
+string_name = "raccoon hide"

@@ -1,0 +1,7 @@
+[gd_resource type="Resource" script_class="SkillResource" load_steps=2 format=3 uid="uid://bj66petl0d3xt"]
+
+[ext_resource type="Script" path="res://skill_data/skill_resource.gd" id="1_qhk4n"]
+
+[resource]
+script = ExtResource("1_qhk4n")
+string_name = "cooking"

@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="HuntTargetResource" load_steps=6 format=3 uid="uid://bxm8j8prruhhv"]
+
+[ext_resource type="Script" path="res://item_data/item_resource.gd" id="1_r6ahp"]
+[ext_resource type="Resource" uid="uid://cqljx336mvrke" path="res://item_data/hunting/bones.tres" id="2_tsa5u"]
+[ext_resource type="Resource" uid="uid://0w0lhffwir8p" path="res://item_data/hunting/raccoon_hide.tres" id="3_h2mlu"]
+[ext_resource type="Resource" uid="uid://c7nnbmsidans6" path="res://item_data/hunting/raw_raccoon_meat.tres" id="4_eu4sb"]
+[ext_resource type="Script" path="res://creatures/hunt_targets/hunt_target_resource.gd" id="5_pfaom"]
+
+[resource]
+script = ExtResource("5_pfaom")
+string_name = "raccoon"
+skill_experience = 8.0
+drops = Array[ExtResource("1_r6ahp")]([ExtResource("2_tsa5u"), ExtResource("3_h2mlu"), ExtResource("4_eu4sb")])

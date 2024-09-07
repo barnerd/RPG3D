@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="RecipeResource" load_steps=6 format=3 uid="uid://cn160l0oedusc"]
+
+[ext_resource type="Script" path="res://item_data/item_resource.gd" id="1_fa4da"]
+[ext_resource type="Resource" path="res://skill_data/smelting_skill.tres" id="1_fp2c3"]
+[ext_resource type="Resource" path="res://item_data/ores/silver_ore.tres" id="2_oddmm"]
+[ext_resource type="Resource" path="res://item_data/ingots/silver_ingot.tres" id="3_scr15"]
+[ext_resource type="Script" path="res://item_data/recipe_resource.gd" id="4_k1kdj"]
+
+[resource]
+script = ExtResource("4_k1kdj")
+associated_skill = ExtResource("1_fp2c3")
+skill_experience = 6.0
+input_items = Array[ExtResource("1_fa4da")]([ExtResource("2_oddmm")])
+output_items = Array[ExtResource("1_fa4da")]([ExtResource("3_scr15")])
+string_name = "silver ingot"

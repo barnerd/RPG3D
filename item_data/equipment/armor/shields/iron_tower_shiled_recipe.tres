@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="RecipeResource" load_steps=6 format=3 uid="uid://cgxc2idtb2xxg"]
+
+[ext_resource type="Script" path="res://item_data/item_resource.gd" id="1_hoahh"]
+[ext_resource type="Resource" path="res://skill_data/metalsmithing_skill.tres" id="1_hviyp"]
+[ext_resource type="Script" path="res://item_data/recipe_resource.gd" id="2_1vumr"]
+[ext_resource type="Resource" path="res://item_data/ingots/iron_ingot.tres" id="3_hlfcf"]
+[ext_resource type="Resource" path="res://item_data/equipment/armor/shields/iron_tower_shield.tres" id="4_wtp78"]
+
+[resource]
+script = ExtResource("2_1vumr")
+associated_skill = ExtResource("1_hviyp")
+skill_experience = 10.0
+input_items = Array[ExtResource("1_hoahh")]([ExtResource("3_hlfcf")])
+output_items = Array[ExtResource("1_hoahh")]([ExtResource("4_wtp78")])
+string_name = "iron tower shield"

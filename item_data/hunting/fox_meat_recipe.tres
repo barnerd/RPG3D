@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="RecipeResource" load_steps=6 format=3 uid="uid://dpuqgq4a8r1lc"]
+
+[ext_resource type="Resource" uid="uid://bj66petl0d3xt" path="res://skill_data/cooking_skill.tres" id="1_nwtad"]
+[ext_resource type="Script" path="res://item_data/item_resource.gd" id="2_knsvu"]
+[ext_resource type="Resource" uid="uid://byh5sbwnmbh0m" path="res://item_data/hunting/raw_fox_meat.tres" id="3_b1axn"]
+[ext_resource type="Resource" uid="uid://cxpdrk368huj7" path="res://item_data/food/fox_meat.tres" id="4_pm52o"]
+[ext_resource type="Script" path="res://item_data/recipe_resource.gd" id="5_du7ju"]
+
+[resource]
+script = ExtResource("5_du7ju")
+associated_skill = ExtResource("1_nwtad")
+skill_experience = 7.0
+input_items = Array[ExtResource("2_knsvu")]([ExtResource("3_b1axn")])
+output_items = Array[ExtResource("2_knsvu")]([ExtResource("4_pm52o")])
+string_name = "fox meat"

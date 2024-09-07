@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://bivn8psahkrmw"]
+
+[ext_resource type="Script" path="res://item_data/ingots/game_ingot.gd" id="1_jdheh"]
+
+[node name="GameIngot" type="Node"]
+script = ExtResource("1_jdheh")

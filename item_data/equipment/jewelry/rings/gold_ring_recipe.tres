@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="RecipeResource" load_steps=6 format=3 uid="uid://d0ofmbe1upe6a"]
+
+[ext_resource type="Script" path="res://item_data/item_resource.gd" id="1_bayni"]
+[ext_resource type="Resource" uid="uid://143f4svjrx0j" path="res://skill_data/metalsmithing_skill.tres" id="1_mxrae"]
+[ext_resource type="Script" path="res://item_data/recipe_resource.gd" id="2_cgt0n"]
+[ext_resource type="Resource" uid="uid://dlmf56qheuiam" path="res://item_data/ingots/gold_ingot.tres" id="3_m8ysw"]
+[ext_resource type="Resource" uid="uid://d1sfyekshs4rm" path="res://item_data/equipment/jewelry/rings/gold_ring.tres" id="4_5j3sc"]
+
+[resource]
+script = ExtResource("2_cgt0n")
+associated_skill = ExtResource("1_mxrae")
+skill_experience = 10.0
+input_items = Array[ExtResource("1_bayni")]([ExtResource("3_m8ysw")])
+output_items = Array[ExtResource("1_bayni")]([ExtResource("4_5j3sc")])
+string_name = "gold ring"

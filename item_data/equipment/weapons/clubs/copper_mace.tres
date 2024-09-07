@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="WeaponResource" load_steps=4 format=3 uid="uid://dhape3xbtbj3"]
+
+[ext_resource type="Script" path="res://item_data/equipment/weapons/weapon_resource.gd" id="1_dbvb3"]
+[ext_resource type="Resource" uid="uid://biojnprhb5j63" path="res://equipment_slots/main_hand_slot.tres" id="2_luxec"]
+[ext_resource type="Resource" uid="uid://bebpql3hp3p8r" path="res://equipment_slots/weapon_types/club_type.tres" id="3_nteo6"]
+
+[resource]
+script = ExtResource("1_dbvb3")
+weapon_type = ExtResource("3_nteo6")
+slot = ExtResource("2_luxec")
+string_name = "copper mace"

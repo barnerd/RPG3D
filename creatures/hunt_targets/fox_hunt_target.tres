@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="HuntTargetResource" load_steps=6 format=3 uid="uid://b6b5tsnlqu0yi"]
+
+[ext_resource type="Script" path="res://item_data/item_resource.gd" id="1_revmq"]
+[ext_resource type="Resource" uid="uid://cqljx336mvrke" path="res://item_data/hunting/bones.tres" id="2_jq6vc"]
+[ext_resource type="Resource" uid="uid://2ixxbtrx8i5e" path="res://item_data/hunting/fox_hide.tres" id="3_wyxd1"]
+[ext_resource type="Resource" uid="uid://byh5sbwnmbh0m" path="res://item_data/hunting/raw_fox_meat.tres" id="4_k8cfb"]
+[ext_resource type="Script" path="res://creatures/hunt_targets/hunt_target_resource.gd" id="5_qaqn3"]
+
+[resource]
+script = ExtResource("5_qaqn3")
+string_name = "fox"
+skill_experience = 7.0
+drops = Array[ExtResource("1_revmq")]([ExtResource("2_jq6vc"), ExtResource("3_wyxd1"), ExtResource("4_k8cfb")])

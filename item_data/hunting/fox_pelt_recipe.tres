@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="RecipeResource" load_steps=6 format=3 uid="uid://cw1yn8ivylxsw"]
+
+[ext_resource type="Resource" path="res://skill_data/leatherworking_skill.tres" id="1_qny8v"]
+[ext_resource type="Script" path="res://item_data/item_resource.gd" id="2_ix0oc"]
+[ext_resource type="Resource" uid="uid://2ixxbtrx8i5e" path="res://item_data/hunting/fox_hide.tres" id="3_a12xb"]
+[ext_resource type="Resource" uid="uid://brynjuk1vq0qp" path="res://item_data/hunting/fox_pelt.tres" id="4_6gf48"]
+[ext_resource type="Script" path="res://item_data/recipe_resource.gd" id="5_6al1e"]
+
+[resource]
+script = ExtResource("5_6al1e")
+associated_skill = ExtResource("1_qny8v")
+skill_experience = 7.0
+input_items = Array[ExtResource("2_ix0oc")]([ExtResource("3_a12xb")])
+output_items = Array[ExtResource("2_ix0oc")]([ExtResource("4_6gf48")])
+string_name = "fox pelt"

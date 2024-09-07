@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="ArmorResource" load_steps=3 format=3 uid="uid://c37l0r4fudsbb"]
+
+[ext_resource type="Script" path="res://item_data/equipment/armor/armor_resource.gd" id="1_m7up0"]
+[ext_resource type="Resource" uid="uid://dbahrgmnuojnf" path="res://equipment_slots/legs_slots.tres" id="2_3qimc"]
+
+[resource]
+script = ExtResource("1_m7up0")
+slot = ExtResource("2_3qimc")
+string_name = "copper cuisses"

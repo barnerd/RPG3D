@@ -1,0 +1,7 @@
+[gd_resource type="Resource" load_steps=2 format=3 uid="uid://dfhwwe6nug7uc"]
+
+[ext_resource type="Script" path="res://skill_data/skill_resource.gd" id="1_4j511"]
+
+[resource]
+script = ExtResource("1_4j511")
+string_name = "smelting"

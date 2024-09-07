@@ -1,0 +1,421 @@
+[gd_scene load_steps=122 format=3 uid="uid://eon6ar5m1igd"]
+
+[ext_resource type="Script" path="res://gathering_skill_actions/ore_mine.gd" id="1_2a6w1"]
+[ext_resource type="Resource" path="res://item_data/ores/copper_ore.tres" id="2_svis1"]
+[ext_resource type="Resource" path="res://item_data/ores/tin_ore.tres" id="3_butbw"]
+[ext_resource type="Resource" path="res://skill_data/mining_skill.tres" id="3_t47sa"]
+[ext_resource type="Resource" path="res://item_data/ores/silver_ore.tres" id="4_ug2q6"]
+[ext_resource type="Script" path="res://misc_scripts/smelt_recipe_list.gd" id="5_8vjx6"]
+[ext_resource type="Resource" path="res://item_data/ores/nickel_ore.tres" id="5_nrher"]
+[ext_resource type="Script" path="res://item_data/recipe_resource.gd" id="6_37wmc"]
+[ext_resource type="Resource" path="res://item_data/ores/iron_ore.tres" id="6_xgert"]
+[ext_resource type="Resource" path="res://item_data/ores/mithril_ore.tres" id="7_2tqn2"]
+[ext_resource type="Resource" uid="uid://grd8xpornqea" path="res://item_data/ingots/adamantite_ingot_recipe.tres" id="7_5jgpy"]
+[ext_resource type="Resource" uid="uid://coofqpdt6qbq5" path="res://item_data/ingots/bronze_ingot_recipe.tres" id="8_7n5oq"]
+[ext_resource type="Resource" path="res://item_data/ores/adamantite_ore.tres" id="8_an3c7"]
+[ext_resource type="Resource" uid="uid://424hdhxtvao7" path="res://item_data/ingots/copper_ingot_recipe.tres" id="9_laira"]
+[ext_resource type="Resource" uid="uid://b21xwete0xvyt" path="res://item_data/ingots/gold_ingot_recipe.tres" id="10_5kyu0"]
+[ext_resource type="Resource" path="res://item_data/ores/gold_ore.tres" id="10_ax5uh"]
+[ext_resource type="Resource" path="res://item_data/ores/platinum_ore.tres" id="11_r3duo"]
+[ext_resource type="Resource" uid="uid://dqwtouqev70e7" path="res://item_data/ingots/iron_ingot_recipe.tres" id="11_u1fda"]
+[ext_resource type="Resource" uid="uid://dmttgqasbasxo" path="res://item_data/ingots/mithril_ingot_recipe.tres" id="12_8h8dl"]
+[ext_resource type="Script" path="res://gathering_skill_actions/hunt_target.gd" id="12_v112u"]
+[ext_resource type="Resource" uid="uid://57ki30x0lorg" path="res://creatures/hunt_targets/rabbit_hunt_target.tres" id="13_2b606"]
+[ext_resource type="Resource" uid="uid://bo72plx1o4764" path="res://item_data/ingots/nickel_ingot_recipe.tres" id="13_if5wb"]
+[ext_resource type="Resource" path="res://skill_data/hunting_skill.tres" id="14_s57or"]
+[ext_resource type="Resource" uid="uid://dmy72ae52xrrl" path="res://item_data/ingots/platinum_ingot_recipe.tres" id="14_yqil0"]
+[ext_resource type="Resource" uid="uid://cn160l0oedusc" path="res://item_data/ingots/silver_ingot_recipe.tres" id="15_cuo1j"]
+[ext_resource type="Resource" uid="uid://b6b5tsnlqu0yi" path="res://creatures/hunt_targets/fox_hunt_target.tres" id="15_ujs6q"]
+[ext_resource type="Resource" uid="uid://bxm8j8prruhhv" path="res://creatures/hunt_targets/raccoon_hunt_target.tres" id="16_14lgu"]
+[ext_resource type="Resource" uid="uid://dsdwo2y85et1e" path="res://item_data/ingots/tin_ingot_recipe.tres" id="16_o8wwg"]
+[ext_resource type="Script" path="res://misc_scripts/crafting_action.gd" id="17_e6y3p"]
+[ext_resource type="Resource" uid="uid://d30imxm63v36" path="res://creatures/hunt_targets/deer_hunt_target.tres" id="17_qiu22"]
+[ext_resource type="Resource" uid="uid://b008xi2n0e11y" path="res://item_data/equipment/weapons/clubs/bronze_mace_recipe.tres" id="18_2p84j"]
+[ext_resource type="Resource" uid="uid://c3cvasuyvnn7s" path="res://item_data/equipment/weapons/clubs/copper_mace_recipe.tres" id="19_hbmbq"]
+[ext_resource type="Script" path="res://misc_scripts/bssmith_recipe_list.gd" id="25_nd3as"]
+[ext_resource type="Resource" uid="uid://ceq1h580pyr1y" path="res://item_data/equipment/weapons/clubs/iron_mace_recipe.tres" id="28_pn4xi"]
+[ext_resource type="Resource" uid="uid://dhd1qltp84snb" path="res://item_data/equipment/weapons/clubs/mithril_mace_recipe.tres" id="29_bl2gx"]
+[ext_resource type="Resource" uid="uid://2w5yaop1v0ig" path="res://item_data/equipment/weapons/clubs/adamantite_mace_recipe.tres" id="30_55146"]
+[ext_resource type="Resource" uid="uid://b3lc40hnwjgjf" path="res://item_data/equipment/weapons/swords/copper_dagger_recipe.tres" id="31_nqmqc"]
+[ext_resource type="Script" path="res://misc_scripts/UI/player_skills_ui.gd" id="31_t4pwr"]
+[ext_resource type="Script" path="res://misc_scripts/UI/player_inv_ui.gd" id="32_r6n3t"]
+[ext_resource type="Resource" uid="uid://ds3owwpvcr2ng" path="res://item_data/equipment/weapons/swords/bronze_dagger_recipe.tres" id="32_ylll0"]
+[ext_resource type="Script" path="res://misc_scripts/UI/player_equip_ui.gd" id="33_5n1fr"]
+[ext_resource type="Resource" uid="uid://cdkbt3erupao6" path="res://item_data/equipment/weapons/swords/iron_dagger_recipe.tres" id="33_gk55i"]
+[ext_resource type="Resource" uid="uid://c6r3bh3rdv3se" path="res://item_data/equipment/weapons/swords/mithril_dagger_recipe.tres" id="34_txwc0"]
+[ext_resource type="Resource" uid="uid://bffd7a3efodkd" path="res://item_data/equipment/weapons/swords/adamantite_dagger_recipe.tres" id="35_1ihu1"]
+[ext_resource type="Resource" uid="uid://bnpxwk3sw3hiw" path="res://item_data/equipment/weapons/swords/copper_short_sword_recipe.tres" id="36_fivhc"]
+[ext_resource type="Resource" uid="uid://bpdegaxaqilx4" path="res://item_data/equipment/weapons/swords/bronze_short_sword_recipe.tres" id="37_16xfn"]
+[ext_resource type="Resource" uid="uid://dvn7oc0llthpl" path="res://item_data/equipment/weapons/swords/iron_short_sword_recipe.tres" id="38_gbqyh"]
+[ext_resource type="Resource" uid="uid://cqi6gpiovx8jn" path="res://item_data/equipment/weapons/swords/mithril_short_sword_recipe.tres" id="39_gecnp"]
+[ext_resource type="Resource" uid="uid://b7e8gb2dt21er" path="res://item_data/equipment/weapons/swords/adamantite_short_sword_recipe.tres" id="40_hds06"]
+[ext_resource type="Resource" uid="uid://dtrl7778xpsyf" path="res://item_data/equipment/weapons/swords/copper_long_sword_recipe.tres" id="41_jhc40"]
+[ext_resource type="Resource" uid="uid://cgdhj5oh3okt" path="res://item_data/equipment/weapons/swords/bronze_long_sword_recipe.tres" id="42_6sqrx"]
+[ext_resource type="Resource" uid="uid://b5iaebcpt6by0" path="res://item_data/equipment/weapons/swords/iron_long_sword_recipe.tres" id="43_jehtl"]
+[ext_resource type="Resource" uid="uid://63lgsyim3xlj" path="res://item_data/equipment/weapons/swords/mithril_long_sword_recipe.tres" id="44_b4eme"]
+[ext_resource type="Resource" uid="uid://0ydu42ki7uoe" path="res://item_data/equipment/weapons/swords/adamantite_long_sword_recipe.tres" id="45_np6yd"]
+[ext_resource type="Resource" uid="uid://djlg5gf5ubf81" path="res://item_data/equipment/jewelry/rings/silver_ring_recipe.tres" id="46_rpiam"]
+[ext_resource type="Script" path="res://misc_scripts/UI/player_inv_to_equip_ui.gd" id="46_u6dol"]
+[ext_resource type="Resource" path="res://item_data/equipment/jewelry/rings/gold_ring_recipe.tres" id="47_a5aqc"]
+[ext_resource type="Script" path="res://misc_scripts/UI/player_equip_action_ui.gd" id="47_yr6q1"]
+[ext_resource type="Script" path="res://misc_scripts/UI/player_equip_to_unequip_ui.gd" id="48_wng2s"]
+[ext_resource type="Resource" uid="uid://dw47qenq6ludd" path="res://item_data/equipment/jewelry/rings/platinum_ring_recipe.tres" id="48_xbc6e"]
+[ext_resource type="Resource" uid="uid://dqi435h172djo" path="res://item_data/equipment/jewelry/necklaces/silver_necklace_recipe.tres" id="49_evbq8"]
+[ext_resource type="Resource" uid="uid://djgnd4q22eso3" path="res://item_data/equipment/jewelry/necklaces/gold_necklace_recipe.tres" id="50_hcppw"]
+[ext_resource type="Resource" uid="uid://dxefc0mt4si4t" path="res://item_data/equipment/jewelry/necklaces/platinum_necklace_recipe.tres" id="51_ry8jv"]
+[ext_resource type="Resource" uid="uid://cadggqwolvd1a" path="res://item_data/equipment/armor/boots/copper_sabaton_recipe.tres" id="52_u181t"]
+[ext_resource type="Resource" uid="uid://bvtxsusysarkp" path="res://item_data/equipment/armor/boots/bronze_sabaton_recipe.tres" id="53_bnpau"]
+[ext_resource type="Resource" uid="uid://5kqo2bcacjp2" path="res://item_data/equipment/armor/boots/iron_sabaton_recipe.tres" id="54_wqsyl"]
+[ext_resource type="Resource" uid="uid://c1ij43pwi5vu1" path="res://item_data/equipment/armor/boots/mithril_sabaton_recipe.tres" id="55_4jxl7"]
+[ext_resource type="Resource" uid="uid://boceyt4gvjxsl" path="res://item_data/equipment/armor/boots/adamantite_sabaton_recipe.tres" id="56_fy6fw"]
+[ext_resource type="Resource" uid="uid://q6wkfcxly3yk" path="res://item_data/equipment/armor/shields/copper_buckler_recipe.tres" id="57_5qv0x"]
+[ext_resource type="Resource" uid="uid://dpq7es1q5dvim" path="res://item_data/equipment/armor/gloves/copper_gauntlets_recipe.tres" id="57_huuo0"]
+[ext_resource type="Resource" uid="uid://cxg6xxlefqhim" path="res://item_data/equipment/armor/shields/copper_kite_shield_recipe.tres" id="58_0siya"]
+[ext_resource type="Resource" uid="uid://b7nblbve1hyqs" path="res://item_data/equipment/armor/gloves/bronze_gauntlets_recipe.tres" id="58_onpty"]
+[ext_resource type="Resource" uid="uid://djuq3bgksmggk" path="res://item_data/equipment/armor/shields/copper_tower_shiled_recipe.tres" id="59_11w4s"]
+[ext_resource type="Resource" uid="uid://bml02hkq8q06c" path="res://item_data/equipment/armor/gloves/iron_gauntlets_recipe.tres" id="59_d2drt"]
+[ext_resource type="Resource" uid="uid://by7ir3hrb26kj" path="res://item_data/equipment/armor/shields/bronze_buckler_recipe.tres" id="60_fjuxl"]
+[ext_resource type="Resource" uid="uid://c03o45kietmpu" path="res://item_data/equipment/armor/gloves/mithril_gauntlets_recipe.tres" id="60_vl2cm"]
+[ext_resource type="Resource" uid="uid://bnoruo6akgqk1" path="res://item_data/equipment/armor/shields/bronze_kite_shield_recipe.tres" id="61_0c16k"]
+[ext_resource type="Resource" uid="uid://cy8tq245dk7bs" path="res://item_data/equipment/armor/gloves/adamantite_gauntlets_recipe.tres" id="61_3a580"]
+[ext_resource type="Resource" uid="uid://btf7dqhhkin5r" path="res://item_data/equipment/armor/shields/bronze_tower_shiled_recipe.tres" id="62_pibtk"]
+[ext_resource type="Resource" uid="uid://bfss5f577dg3v" path="res://item_data/equipment/armor/shields/iron_buckler_recipe.tres" id="63_c2c36"]
+[ext_resource type="Resource" uid="uid://cem57f0bieqiu" path="res://item_data/equipment/armor/shields/iron_kite_shield_recipe.tres" id="64_qv0ry"]
+[ext_resource type="Resource" uid="uid://cgxc2idtb2xxg" path="res://item_data/equipment/armor/shields/iron_tower_shiled_recipe.tres" id="65_p8b2y"]
+[ext_resource type="Resource" uid="uid://cwp71fbocmgvy" path="res://item_data/equipment/armor/shields/mithril_buckler_recipe.tres" id="66_vg1h6"]
+[ext_resource type="Resource" uid="uid://piweruro8c3f" path="res://item_data/equipment/armor/shields/mithril_kite_shield_recipe.tres" id="67_wnnh8"]
+[ext_resource type="Resource" uid="uid://bndtudsmaijcl" path="res://item_data/equipment/armor/shields/mithril_tower_shiled_recipe.tres" id="68_ijk21"]
+[ext_resource type="Resource" uid="uid://c7wxp8l383vbu" path="res://item_data/equipment/armor/shields/adamantite_buckler_recipe.tres" id="69_h88hl"]
+[ext_resource type="Resource" uid="uid://b8kpabl2gccaa" path="res://item_data/equipment/armor/shields/adamantite_kite_shield_recipe.tres" id="70_btlkp"]
+[ext_resource type="Resource" uid="uid://cw2yrnps8dwfn" path="res://item_data/equipment/armor/shields/adamantite_tower_shiled_recipe.tres" id="71_i7w6j"]
+[ext_resource type="Resource" uid="uid://b1enxb6kp5mx3" path="res://item_data/equipment/armor/legs/copper_cuisses_recipe.tres" id="72_3evwx"]
+[ext_resource type="Resource" uid="uid://cae5myu4l4d2a" path="res://item_data/equipment/armor/legs/bronze_cuisses_recipe.tres" id="73_8h7w7"]
+[ext_resource type="Resource" uid="uid://iirpi6372coa" path="res://item_data/equipment/armor/legs/iron_cuisses_recipe.tres" id="74_qmr30"]
+[ext_resource type="Resource" uid="uid://bdl4f3qnn2j6v" path="res://item_data/equipment/armor/legs/mithril_cuisses_recipe.tres" id="75_h31d7"]
+[ext_resource type="Resource" uid="uid://c3qga1xfu6jpq" path="res://item_data/equipment/armor/legs/adamantite_cuisses_recipe.tres" id="76_35bgm"]
+[ext_resource type="Resource" uid="uid://b2atv64qfwgk1" path="res://item_data/equipment/armor/body/copper_chainmail_recipe.tres" id="77_ay8t2"]
+[ext_resource type="Resource" uid="uid://d1v3dqvx1xvqg" path="res://item_data/equipment/armor/helmets/copper_chain_coif_recipe.tres" id="77_illuh"]
+[ext_resource type="Resource" uid="uid://daxbufrd4fdle" path="res://item_data/equipment/armor/body/bronze_chainmail_recipe.tres" id="78_lg6ps"]
+[ext_resource type="Resource" uid="uid://y2guqtrj380k" path="res://item_data/equipment/armor/helmets/bronze_chain_coif_recipe.tres" id="78_ptrg1"]
+[ext_resource type="Resource" uid="uid://yrjscvs0vifv" path="res://item_data/equipment/armor/body/iron_chainmail_recipe.tres" id="79_034ui"]
+[ext_resource type="Resource" uid="uid://ehhf108r34qe" path="res://item_data/equipment/armor/helmets/iron_chain_coif_recipe.tres" id="79_j1dxq"]
+[ext_resource type="Resource" uid="uid://dcwbm8klll67x" path="res://item_data/equipment/armor/body/mithril_chainmail_recipe.tres" id="80_4as0g"]
+[ext_resource type="Resource" uid="uid://b1qxg8ucyufjy" path="res://item_data/equipment/armor/helmets/mithril_chain_coif_recipe.tres" id="80_4ygi3"]
+[ext_resource type="Resource" uid="uid://b1g6j0k03mh46" path="res://item_data/equipment/armor/helmets/adamantite_chain_coif_recipe.tres" id="81_8k058"]
+[ext_resource type="Resource" uid="uid://cn54go1fp4hqb" path="res://item_data/equipment/armor/body/adamantite_chainmail_recipe.tres" id="81_yq3v1"]
+[ext_resource type="Resource" uid="uid://be46op4l6dvqw" path="res://item_data/equipment/armor/body/copper_breastplate_recipe.tres" id="82_8k1xk"]
+[ext_resource type="Resource" uid="uid://dh0jdo57imc65" path="res://item_data/equipment/armor/helmets/copper_helm_recipe.tres" id="82_fabsr"]
+[ext_resource type="Resource" uid="uid://kbfpwxvm4t4l" path="res://item_data/equipment/armor/helmets/bronze_helm_recipe.tres" id="83_447gq"]
+[ext_resource type="Resource" uid="uid://bks0gh8ai78ch" path="res://item_data/equipment/armor/body/bronze_breastplate_recipe.tres" id="83_bd8r4"]
+[ext_resource type="Resource" uid="uid://5gmebigj7rtj" path="res://item_data/equipment/armor/body/iron_breastplate_recipe.tres" id="84_41bl5"]
+[ext_resource type="Resource" uid="uid://cs7gb1ynbpivq" path="res://item_data/equipment/armor/helmets/iron_helm_recipe.tres" id="84_gjegk"]
+[ext_resource type="Resource" uid="uid://34ibh48kg2ty" path="res://item_data/equipment/armor/body/mithril_breastplate_recipe.tres" id="85_f6a1k"]
+[ext_resource type="Resource" uid="uid://ctgcswv6oskht" path="res://item_data/equipment/armor/helmets/mithril_helm_recipe.tres" id="85_j4nju"]
+[ext_resource type="Resource" uid="uid://dd4j4cql3q1w2" path="res://item_data/equipment/armor/body/adamantite_breastplate_recipe.tres" id="86_jlpis"]
+[ext_resource type="Resource" uid="uid://l7vnewaq4ikw" path="res://item_data/equipment/armor/helmets/adamantite_helm_recipe.tres" id="86_qw3ed"]
+[ext_resource type="Resource" uid="uid://dv2e26eqrj8su" path="res://item_data/hunting/rabbit_meat_recipe.tres" id="108_hdcrc"]
+[ext_resource type="Resource" uid="uid://dpuqgq4a8r1lc" path="res://item_data/hunting/fox_meat_recipe.tres" id="109_527jq"]
+[ext_resource type="Resource" uid="uid://qeqnwl1dqath" path="res://item_data/hunting/raccoon_meat_recipe.tres" id="110_dacfu"]
+[ext_resource type="Resource" uid="uid://du2ier3yb1efc" path="res://item_data/hunting/deer_meat_recipe.tres" id="111_xvyq2"]
+[ext_resource type="Resource" uid="uid://bkc2eqjd8gda8" path="res://item_data/hunting/rabbit_pelt_recipe.tres" id="112_i11gx"]
+[ext_resource type="Resource" uid="uid://cw1yn8ivylxsw" path="res://item_data/hunting/fox_pelt_recipe.tres" id="113_awq4t"]
+[ext_resource type="Resource" uid="uid://tnul4hw3r27y" path="res://item_data/hunting/raccoon_pelt_recipe.tres" id="114_ehfye"]
+[ext_resource type="Resource" uid="uid://g0m57iyupkmd" path="res://item_data/hunting/deerskin_leather_recipe.tres" id="115_mawmq"]
+
+[node name="Main" type="Node2D"]
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/HBoxContainer"]
+layout_mode = 2
+
+[node name="copper mine" type="Button" parent="VBoxContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "Mine Ore"
+script = ExtResource("1_2a6w1")
+ore_resource = ExtResource("2_svis1")
+mining_skill = ExtResource("3_t47sa")
+
+[node name="tin mine" type="Button" parent="VBoxContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "Mine Ore"
+script = ExtResource("1_2a6w1")
+ore_resource = ExtResource("3_butbw")
+mining_skill = ExtResource("3_t47sa")
+
+[node name="nickel mine" type="Button" parent="VBoxContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "Mine Ore"
+script = ExtResource("1_2a6w1")
+ore_resource = ExtResource("5_nrher")
+mining_skill = ExtResource("3_t47sa")
+
+[node name="iron mine" type="Button" parent="VBoxContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "Mine Ore"
+script = ExtResource("1_2a6w1")
+ore_resource = ExtResource("6_xgert")
+mining_skill = ExtResource("3_t47sa")
+
+[node name="mithril mine" type="Button" parent="VBoxContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "Mine Ore"
+script = ExtResource("1_2a6w1")
+ore_resource = ExtResource("7_2tqn2")
+mining_skill = ExtResource("3_t47sa")
+
+[node name="adamantite mine" type="Button" parent="VBoxContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "Mine Ore"
+script = ExtResource("1_2a6w1")
+ore_resource = ExtResource("8_an3c7")
+mining_skill = ExtResource("3_t47sa")
+
+[node name="silver mine" type="Button" parent="VBoxContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "Mine Ore"
+script = ExtResource("1_2a6w1")
+ore_resource = ExtResource("4_ug2q6")
+mining_skill = ExtResource("3_t47sa")
+
+[node name="gold mine" type="Button" parent="VBoxContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "Mine Ore"
+script = ExtResource("1_2a6w1")
+ore_resource = ExtResource("10_ax5uh")
+mining_skill = ExtResource("3_t47sa")
+
+[node name="platinum mine" type="Button" parent="VBoxContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "Mine Ore"
+script = ExtResource("1_2a6w1")
+ore_resource = ExtResource("11_r3duo")
+mining_skill = ExtResource("3_t47sa")
+
+[node name="VSeparator" type="VSeparator" parent="VBoxContainer/HBoxContainer"]
+layout_mode = 2
+
+[node name="VBoxContainer4" type="VBoxContainer" parent="VBoxContainer/HBoxContainer"]
+layout_mode = 2
+
+[node name="rabbit" type="Button" parent="VBoxContainer/HBoxContainer/VBoxContainer4"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "Hunt animal"
+script = ExtResource("12_v112u")
+hunt_resource = ExtResource("13_2b606")
+hunting_skill = ExtResource("14_s57or")
+
+[node name="fox" type="Button" parent="VBoxContainer/HBoxContainer/VBoxContainer4"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "Hunt animal"
+script = ExtResource("12_v112u")
+hunt_resource = ExtResource("15_ujs6q")
+hunting_skill = ExtResource("14_s57or")
+
+[node name="raccoon" type="Button" parent="VBoxContainer/HBoxContainer/VBoxContainer4"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "Hunt animal"
+script = ExtResource("12_v112u")
+hunt_resource = ExtResource("16_14lgu")
+hunting_skill = ExtResource("14_s57or")
+
+[node name="deer" type="Button" parent="VBoxContainer/HBoxContainer/VBoxContainer4"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "Hunt animal"
+script = ExtResource("12_v112u")
+hunt_resource = ExtResource("17_qiu22")
+hunting_skill = ExtResource("14_s57or")
+
+[node name="VSeparator3" type="VSeparator" parent="VBoxContainer/HBoxContainer"]
+layout_mode = 2
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="VBoxContainer/HBoxContainer"]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer/HBoxContainer/VBoxContainer2"]
+layout_mode = 2
+
+[node name="OptionButton" type="OptionButton" parent="VBoxContainer/HBoxContainer/VBoxContainer2/HBoxContainer"]
+layout_mode = 2
+script = ExtResource("5_8vjx6")
+recipes = Array[ExtResource("6_37wmc")]([ExtResource("9_laira"), ExtResource("16_o8wwg"), ExtResource("13_if5wb"), ExtResource("8_7n5oq"), ExtResource("11_u1fda"), ExtResource("12_8h8dl"), ExtResource("7_5jgpy"), ExtResource("15_cuo1j"), ExtResource("10_5kyu0"), ExtResource("14_yqil0")])
+
+[node name="Button" type="Button" parent="VBoxContainer/HBoxContainer/VBoxContainer2/HBoxContainer"]
+layout_mode = 2
+text = "Smelt"
+script = ExtResource("17_e6y3p")
+
+[node name="HSeparator" type="HSeparator" parent="VBoxContainer/HBoxContainer/VBoxContainer2"]
+layout_mode = 2
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="VBoxContainer/HBoxContainer/VBoxContainer2"]
+layout_mode = 2
+
+[node name="OptionButton" type="OptionButton" parent="VBoxContainer/HBoxContainer/VBoxContainer2/HBoxContainer2"]
+layout_mode = 2
+script = ExtResource("25_nd3as")
+mace_recipes = Array[ExtResource("6_37wmc")]([ExtResource("19_hbmbq"), ExtResource("18_2p84j"), ExtResource("28_pn4xi"), ExtResource("29_bl2gx"), ExtResource("30_55146")])
+dagger_recipes = Array[ExtResource("6_37wmc")]([ExtResource("31_nqmqc"), ExtResource("32_ylll0"), ExtResource("33_gk55i"), ExtResource("34_txwc0"), ExtResource("35_1ihu1")])
+short_sword_recipes = Array[ExtResource("6_37wmc")]([ExtResource("36_fivhc"), ExtResource("37_16xfn"), ExtResource("38_gbqyh"), ExtResource("39_gecnp"), ExtResource("40_hds06")])
+long_sword_recipes = Array[ExtResource("6_37wmc")]([ExtResource("41_jhc40"), ExtResource("42_6sqrx"), ExtResource("43_jehtl"), ExtResource("44_b4eme"), ExtResource("45_np6yd")])
+ring_recipes = Array[ExtResource("6_37wmc")]([ExtResource("46_rpiam"), ExtResource("47_a5aqc"), ExtResource("48_xbc6e")])
+necklace_recipes = Array[ExtResource("6_37wmc")]([ExtResource("49_evbq8"), ExtResource("50_hcppw"), ExtResource("51_ry8jv")])
+boots_recipes = Array[ExtResource("6_37wmc")]([ExtResource("52_u181t"), ExtResource("53_bnpau"), ExtResource("54_wqsyl"), ExtResource("55_4jxl7"), ExtResource("56_fy6fw")])
+shields_recipes = Array[ExtResource("6_37wmc")]([ExtResource("57_5qv0x"), ExtResource("58_0siya"), ExtResource("59_11w4s"), ExtResource("60_fjuxl"), ExtResource("61_0c16k"), ExtResource("62_pibtk"), ExtResource("63_c2c36"), ExtResource("64_qv0ry"), ExtResource("65_p8b2y"), ExtResource("66_vg1h6"), ExtResource("67_wnnh8"), ExtResource("68_ijk21"), ExtResource("69_h88hl"), ExtResource("70_btlkp"), ExtResource("71_i7w6j")])
+legs_recipes = Array[ExtResource("6_37wmc")]([ExtResource("72_3evwx"), ExtResource("73_8h7w7"), ExtResource("74_qmr30"), ExtResource("75_h31d7"), ExtResource("76_35bgm")])
+gauntlets_recipes = Array[ExtResource("6_37wmc")]([ExtResource("57_huuo0"), ExtResource("58_onpty"), ExtResource("59_d2drt"), ExtResource("60_vl2cm"), ExtResource("61_3a580")])
+helmets_recipes = Array[ExtResource("6_37wmc")]([ExtResource("77_illuh"), ExtResource("78_ptrg1"), ExtResource("79_j1dxq"), ExtResource("80_4ygi3"), ExtResource("81_8k058"), ExtResource("82_fabsr"), ExtResource("83_447gq"), ExtResource("84_gjegk"), ExtResource("85_j4nju"), ExtResource("86_qw3ed")])
+body_armor_recipes = Array[ExtResource("6_37wmc")]([ExtResource("77_ay8t2"), ExtResource("78_lg6ps"), ExtResource("79_034ui"), ExtResource("80_4as0g"), ExtResource("81_yq3v1"), ExtResource("82_8k1xk"), ExtResource("83_bd8r4"), ExtResource("84_41bl5"), ExtResource("85_f6a1k"), ExtResource("86_jlpis")])
+
+[node name="Button" type="Button" parent="VBoxContainer/HBoxContainer/VBoxContainer2/HBoxContainer2"]
+layout_mode = 2
+text = "Craft"
+script = ExtResource("17_e6y3p")
+
+[node name="HSeparator2" type="HSeparator" parent="VBoxContainer/HBoxContainer/VBoxContainer2"]
+layout_mode = 2
+
+[node name="HBoxContainer3" type="HBoxContainer" parent="VBoxContainer/HBoxContainer/VBoxContainer2"]
+layout_mode = 2
+
+[node name="OptionButton" type="OptionButton" parent="VBoxContainer/HBoxContainer/VBoxContainer2/HBoxContainer3"]
+layout_mode = 2
+script = ExtResource("5_8vjx6")
+recipes = Array[ExtResource("6_37wmc")]([ExtResource("108_hdcrc"), ExtResource("109_527jq"), ExtResource("110_dacfu"), ExtResource("111_xvyq2")])
+
+[node name="Button" type="Button" parent="VBoxContainer/HBoxContainer/VBoxContainer2/HBoxContainer3"]
+layout_mode = 2
+text = "Cook"
+script = ExtResource("17_e6y3p")
+
+[node name="HSeparator3" type="HSeparator" parent="VBoxContainer/HBoxContainer/VBoxContainer2"]
+layout_mode = 2
+
+[node name="HBoxContainer4" type="HBoxContainer" parent="VBoxContainer/HBoxContainer/VBoxContainer2"]
+layout_mode = 2
+
+[node name="OptionButton" type="OptionButton" parent="VBoxContainer/HBoxContainer/VBoxContainer2/HBoxContainer4"]
+layout_mode = 2
+script = ExtResource("5_8vjx6")
+recipes = Array[ExtResource("6_37wmc")]([ExtResource("112_i11gx"), ExtResource("113_awq4t"), ExtResource("114_ehfye"), ExtResource("115_mawmq")])
+
+[node name="Button" type="Button" parent="VBoxContainer/HBoxContainer/VBoxContainer2/HBoxContainer4"]
+layout_mode = 2
+text = "Craft"
+script = ExtResource("17_e6y3p")
+
+[node name="VSeparator2" type="VSeparator" parent="VBoxContainer/HBoxContainer"]
+layout_mode = 2
+
+[node name="VBoxContainer3" type="VBoxContainer" parent="VBoxContainer/HBoxContainer"]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer/HBoxContainer/VBoxContainer3"]
+layout_mode = 2
+
+[node name="OptionButton" type="OptionButton" parent="VBoxContainer/HBoxContainer/VBoxContainer3/HBoxContainer"]
+layout_mode = 2
+script = ExtResource("46_u6dol")
+
+[node name="Equip" type="Button" parent="VBoxContainer/HBoxContainer/VBoxContainer3/HBoxContainer"]
+layout_mode = 2
+text = "Equip"
+script = ExtResource("47_yr6q1")
+
+[node name="HSeparator" type="HSeparator" parent="VBoxContainer/HBoxContainer/VBoxContainer3"]
+layout_mode = 2
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="VBoxContainer/HBoxContainer/VBoxContainer3"]
+layout_mode = 2
+
+[node name="OptionButton" type="OptionButton" parent="VBoxContainer/HBoxContainer/VBoxContainer3/HBoxContainer2"]
+layout_mode = 2
+script = ExtResource("48_wng2s")
+
+[node name="Unequip" type="Button" parent="VBoxContainer/HBoxContainer/VBoxContainer3/HBoxContainer2"]
+layout_mode = 2
+text = "Unequip"
+script = ExtResource("47_yr6q1")
+
+[node name="HSeparator" type="HSeparator" parent="VBoxContainer"]
+layout_mode = 2
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="ScrollContainer" type="ScrollContainer" parent="VBoxContainer/HBoxContainer2"]
+custom_minimum_size = Vector2(250, 400)
+layout_mode = 2
+size_flags_horizontal = 3
+horizontal_scroll_mode = 0
+
+[node name="Label" type="Label" parent="VBoxContainer/HBoxContainer2/ScrollContainer"]
+custom_minimum_size = Vector2(250, 400)
+layout_mode = 2
+text = "	--SKILLS--"
+script = ExtResource("31_t4pwr")
+
+[node name="VSeparator" type="VSeparator" parent="VBoxContainer/HBoxContainer2"]
+layout_mode = 2
+
+[node name="ScrollContainer2" type="ScrollContainer" parent="VBoxContainer/HBoxContainer2"]
+layout_mode = 2
+horizontal_scroll_mode = 0
+
+[node name="Label" type="Label" parent="VBoxContainer/HBoxContainer2/ScrollContainer2"]
+custom_minimum_size = Vector2(250, 400)
+layout_mode = 2
+text = "	--INVENTORY--"
+script = ExtResource("32_r6n3t")
+
+[node name="VSeparator2" type="VSeparator" parent="VBoxContainer/HBoxContainer2"]
+layout_mode = 2
+
+[node name="ScrollContainer3" type="ScrollContainer" parent="VBoxContainer/HBoxContainer2"]
+layout_mode = 2
+horizontal_scroll_mode = 0
+
+[node name="Label" type="Label" parent="VBoxContainer/HBoxContainer2/ScrollContainer3"]
+custom_minimum_size = Vector2(250, 400)
+layout_mode = 2
+text = "	--EQUIPMENT--"
+script = ExtResource("33_5n1fr")
+
+[connection signal="pressed" from="VBoxContainer/HBoxContainer/VBoxContainer/copper mine" to="VBoxContainer/HBoxContainer/VBoxContainer/copper mine" method="_on_pressed"]
+[connection signal="pressed" from="VBoxContainer/HBoxContainer/VBoxContainer/tin mine" to="VBoxContainer/HBoxContainer/VBoxContainer/tin mine" method="_on_pressed"]
+[connection signal="pressed" from="VBoxContainer/HBoxContainer/VBoxContainer/nickel mine" to="VBoxContainer/HBoxContainer/VBoxContainer/nickel mine" method="_on_pressed"]
+[connection signal="pressed" from="VBoxContainer/HBoxContainer/VBoxContainer/iron mine" to="VBoxContainer/HBoxContainer/VBoxContainer/iron mine" method="_on_pressed"]
+[connection signal="pressed" from="VBoxContainer/HBoxContainer/VBoxContainer/mithril mine" to="VBoxContainer/HBoxContainer/VBoxContainer/mithril mine" method="_on_pressed"]
+[connection signal="pressed" from="VBoxContainer/HBoxContainer/VBoxContainer/adamantite mine" to="VBoxContainer/HBoxContainer/VBoxContainer/adamantite mine" method="_on_pressed"]
+[connection signal="pressed" from="VBoxContainer/HBoxContainer/VBoxContainer/silver mine" to="VBoxContainer/HBoxContainer/VBoxContainer/silver mine" method="_on_pressed"]
+[connection signal="pressed" from="VBoxContainer/HBoxContainer/VBoxContainer/gold mine" to="VBoxContainer/HBoxContainer/VBoxContainer/gold mine" method="_on_pressed"]
+[connection signal="pressed" from="VBoxContainer/HBoxContainer/VBoxContainer/platinum mine" to="VBoxContainer/HBoxContainer/VBoxContainer/platinum mine" method="_on_pressed"]
+[connection signal="pressed" from="VBoxContainer/HBoxContainer/VBoxContainer4/rabbit" to="VBoxContainer/HBoxContainer/VBoxContainer4/rabbit" method="_on_pressed"]
+[connection signal="pressed" from="VBoxContainer/HBoxContainer/VBoxContainer4/fox" to="VBoxContainer/HBoxContainer/VBoxContainer4/fox" method="_on_pressed"]
+[connection signal="pressed" from="VBoxContainer/HBoxContainer/VBoxContainer4/raccoon" to="VBoxContainer/HBoxContainer/VBoxContainer4/raccoon" method="_on_pressed"]
+[connection signal="pressed" from="VBoxContainer/HBoxContainer/VBoxContainer4/deer" to="VBoxContainer/HBoxContainer/VBoxContainer4/deer" method="_on_pressed"]
+[connection signal="pressed" from="VBoxContainer/HBoxContainer/VBoxContainer2/HBoxContainer/Button" to="VBoxContainer/HBoxContainer/VBoxContainer2/HBoxContainer/Button" method="_on_pressed"]
+[connection signal="pressed" from="VBoxContainer/HBoxContainer/VBoxContainer2/HBoxContainer2/Button" to="VBoxContainer/HBoxContainer/VBoxContainer2/HBoxContainer2/Button" method="_on_pressed"]
+[connection signal="pressed" from="VBoxContainer/HBoxContainer/VBoxContainer2/HBoxContainer3/Button" to="VBoxContainer/HBoxContainer/VBoxContainer2/HBoxContainer3/Button" method="_on_pressed"]
+[connection signal="pressed" from="VBoxContainer/HBoxContainer/VBoxContainer2/HBoxContainer4/Button" to="VBoxContainer/HBoxContainer/VBoxContainer2/HBoxContainer4/Button" method="_on_pressed"]
+[connection signal="pressed" from="VBoxContainer/HBoxContainer/VBoxContainer3/HBoxContainer/Equip" to="VBoxContainer/HBoxContainer/VBoxContainer3/HBoxContainer/Equip" method="_on_equip_pressed"]
+[connection signal="pressed" from="VBoxContainer/HBoxContainer/VBoxContainer3/HBoxContainer2/Unequip" to="VBoxContainer/HBoxContainer/VBoxContainer3/HBoxContainer2/Unequip" method="_on_unequip_pressed"]

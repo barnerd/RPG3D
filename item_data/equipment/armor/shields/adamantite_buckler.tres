@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="ArmorResource" load_steps=3 format=3 uid="uid://ctufb0s3s5rkj"]
+
+[ext_resource type="Script" path="res://item_data/equipment/armor/armor_resource.gd" id="1_awe3j"]
+[ext_resource type="Resource" uid="uid://d0eusu8rnrhja" path="res://equipment_slots/off_hand_slot.tres" id="2_hm3hw"]
+
+[resource]
+script = ExtResource("1_awe3j")
+slot = ExtResource("2_hm3hw")
+string_name = "adamantite buckler"

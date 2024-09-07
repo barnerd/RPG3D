@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="WeaponResource" load_steps=4 format=3 uid="uid://b7314xmg3sjfp"]
+
+[ext_resource type="Script" path="res://item_data/equipment/weapons/weapon_resource.gd" id="1_rha75"]
+[ext_resource type="Resource" uid="uid://biojnprhb5j63" path="res://equipment_slots/main_hand_slot.tres" id="2_gxbt3"]
+[ext_resource type="Resource" uid="uid://bg0hde4cgu880" path="res://equipment_slots/weapon_types/short_sword_type.tres" id="3_u4jf4"]
+
+[resource]
+script = ExtResource("1_rha75")
+weapon_type = ExtResource("3_u4jf4")
+slot = ExtResource("2_gxbt3")
+string_name = "adamantite short sword"

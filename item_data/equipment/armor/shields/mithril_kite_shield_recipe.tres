@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="RecipeResource" load_steps=6 format=3 uid="uid://piweruro8c3f"]
+
+[ext_resource type="Resource" path="res://skill_data/metalsmithing_skill.tres" id="1_mtfxe"]
+[ext_resource type="Script" path="res://item_data/item_resource.gd" id="1_yjlad"]
+[ext_resource type="Script" path="res://item_data/recipe_resource.gd" id="2_tpyad"]
+[ext_resource type="Resource" path="res://item_data/ingots/mithril_ingot.tres" id="3_7uaf8"]
+[ext_resource type="Resource" path="res://item_data/equipment/armor/shields/mithril_kite_shield.tres" id="4_yq0io"]
+
+[resource]
+script = ExtResource("2_tpyad")
+associated_skill = ExtResource("1_mtfxe")
+skill_experience = 13.0
+input_items = Array[ExtResource("1_yjlad")]([ExtResource("3_7uaf8")])
+output_items = Array[ExtResource("1_yjlad")]([ExtResource("4_yq0io")])
+string_name = "mithril kite shield"

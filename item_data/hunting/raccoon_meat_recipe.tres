@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="RecipeResource" load_steps=6 format=3 uid="uid://qeqnwl1dqath"]
+
+[ext_resource type="Resource" uid="uid://bj66petl0d3xt" path="res://skill_data/cooking_skill.tres" id="1_2exlb"]
+[ext_resource type="Script" path="res://item_data/item_resource.gd" id="2_2frur"]
+[ext_resource type="Resource" uid="uid://c7nnbmsidans6" path="res://item_data/hunting/raw_raccoon_meat.tres" id="3_4qn8l"]
+[ext_resource type="Resource" uid="uid://bwmh4nu6uk2et" path="res://item_data/food/raccoon_meat.tres" id="4_snswt"]
+[ext_resource type="Script" path="res://item_data/recipe_resource.gd" id="5_citju"]
+
+[resource]
+script = ExtResource("5_citju")
+associated_skill = ExtResource("1_2exlb")
+skill_experience = 8.0
+input_items = Array[ExtResource("2_2frur")]([ExtResource("3_4qn8l")])
+output_items = Array[ExtResource("2_2frur")]([ExtResource("4_snswt")])
+string_name = "raccoon meat"

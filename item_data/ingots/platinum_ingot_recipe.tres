@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="RecipeResource" load_steps=6 format=3 uid="uid://dmy72ae52xrrl"]
+
+[ext_resource type="Resource" path="res://skill_data/smelting_skill.tres" id="1_3w6ot"]
+[ext_resource type="Script" path="res://item_data/item_resource.gd" id="1_xtmqq"]
+[ext_resource type="Resource" path="res://item_data/ores/platinum_ore.tres" id="2_pllhw"]
+[ext_resource type="Resource" path="res://item_data/ingots/platinum_ingot.tres" id="3_0sffb"]
+[ext_resource type="Script" path="res://item_data/recipe_resource.gd" id="4_xk8fx"]
+
+[resource]
+script = ExtResource("4_xk8fx")
+associated_skill = ExtResource("1_3w6ot")
+skill_experience = 8.0
+input_items = Array[ExtResource("1_xtmqq")]([ExtResource("2_pllhw")])
+output_items = Array[ExtResource("1_xtmqq")]([ExtResource("3_0sffb")])
+string_name = "platinum ingot"

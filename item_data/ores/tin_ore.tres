@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="OreResource" load_steps=2 format=3 uid="uid://cmbpqtm8xd2mq"]
+
+[ext_resource type="Script" path="res://item_data/ores/ore_resource.gd" id="1_yf7pi"]
+
+[resource]
+script = ExtResource("1_yf7pi")
+type = 1
+skill_experience = 3.0
+string_name = "tin ore"

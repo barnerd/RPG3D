@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="RecipeResource" load_steps=6 format=3 uid="uid://bo72plx1o4764"]
+
+[ext_resource type="Resource" path="res://skill_data/smelting_skill.tres" id="1_52004"]
+[ext_resource type="Script" path="res://item_data/item_resource.gd" id="1_u71kn"]
+[ext_resource type="Resource" path="res://item_data/ores/nickel_ore.tres" id="2_0tpik"]
+[ext_resource type="Resource" path="res://item_data/ingots/nickel_ingot.tres" id="3_lrfat"]
+[ext_resource type="Script" path="res://item_data/recipe_resource.gd" id="4_qu7lp"]
+
+[resource]
+script = ExtResource("4_qu7lp")
+associated_skill = ExtResource("1_52004")
+skill_experience = 4.0
+input_items = Array[ExtResource("1_u71kn")]([ExtResource("2_0tpik")])
+output_items = Array[ExtResource("1_u71kn")]([ExtResource("3_lrfat")])
+string_name = "nickel ingot"

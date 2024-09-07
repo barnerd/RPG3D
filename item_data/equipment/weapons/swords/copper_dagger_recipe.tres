@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="RecipeResource" load_steps=6 format=3 uid="uid://b3lc40hnwjgjf"]
+
+[ext_resource type="Resource" path="res://skill_data/metalsmithing_skill.tres" id="1_4lh6n"]
+[ext_resource type="Script" path="res://item_data/item_resource.gd" id="2_e1huo"]
+[ext_resource type="Resource" path="res://item_data/ingots/copper_ingot.tres" id="3_pnsiv"]
+[ext_resource type="Resource" path="res://item_data/equipment/weapons/swords/copper_dagger.tres" id="4_8txqu"]
+[ext_resource type="Script" path="res://item_data/recipe_resource.gd" id="5_ql7ki"]
+
+[resource]
+script = ExtResource("5_ql7ki")
+associated_skill = ExtResource("1_4lh6n")
+skill_experience = 3.0
+input_items = Array[ExtResource("2_e1huo")]([ExtResource("3_pnsiv")])
+output_items = Array[ExtResource("2_e1huo")]([ExtResource("4_8txqu")])
+string_name = "copper dagger"

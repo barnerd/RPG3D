@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="RecipeResource" load_steps=6 format=3 uid="uid://b5iaebcpt6by0"]
+
+[ext_resource type="Resource" path="res://skill_data/metalsmithing_skill.tres" id="1_t3g43"]
+[ext_resource type="Script" path="res://item_data/item_resource.gd" id="2_7lu54"]
+[ext_resource type="Resource" path="res://item_data/ingots/iron_ingot.tres" id="3_0iayp"]
+[ext_resource type="Resource" path="res://item_data/equipment/weapons/swords/iron_long_sword.tres" id="4_sspj0"]
+[ext_resource type="Script" path="res://item_data/recipe_resource.gd" id="5_5xmvu"]
+
+[resource]
+script = ExtResource("5_5xmvu")
+associated_skill = ExtResource("1_t3g43")
+skill_experience = 10.0
+input_items = Array[ExtResource("2_7lu54")]([ExtResource("3_0iayp")])
+output_items = Array[ExtResource("2_7lu54")]([ExtResource("4_sspj0")])
+string_name = "iron long sword"

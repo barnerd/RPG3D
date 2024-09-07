@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="WeaponResource" load_steps=4 format=3 uid="uid://ca6c7hiy5g12n"]
+
+[ext_resource type="Script" path="res://item_data/equipment/weapons/weapon_resource.gd" id="1_cwltq"]
+[ext_resource type="Resource" uid="uid://biojnprhb5j63" path="res://equipment_slots/main_hand_slot.tres" id="2_1tiey"]
+[ext_resource type="Resource" uid="uid://bg0hde4cgu880" path="res://equipment_slots/weapon_types/short_sword_type.tres" id="3_ptxri"]
+
+[resource]
+script = ExtResource("1_cwltq")
+weapon_type = ExtResource("3_ptxri")
+slot = ExtResource("2_1tiey")
+string_name = "adamantite dagger"

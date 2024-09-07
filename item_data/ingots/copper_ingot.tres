@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="IngotResource" load_steps=2 format=3 uid="uid://cikontsbdpv4u"]
+
+[ext_resource type="Script" path="res://item_data/ingots/ingot_resource.gd" id="1_ha7q8"]
+
+[resource]
+script = ExtResource("1_ha7q8")
+type = 0
+string_name = "copper ingot"

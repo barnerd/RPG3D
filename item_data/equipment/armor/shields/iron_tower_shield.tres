@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="ArmorResource" load_steps=3 format=3 uid="uid://bvjcpmt5lhpsc"]
+
+[ext_resource type="Script" path="res://item_data/equipment/armor/armor_resource.gd" id="1_8eg6g"]
+[ext_resource type="Resource" uid="uid://d0eusu8rnrhja" path="res://equipment_slots/off_hand_slot.tres" id="2_4jc5d"]
+
+[resource]
+script = ExtResource("1_8eg6g")
+slot = ExtResource("2_4jc5d")
+string_name = "iron tower shield"

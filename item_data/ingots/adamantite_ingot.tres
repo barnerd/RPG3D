@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="IngotResource" load_steps=2 format=3 uid="uid://blhqj8p08axbm"]
+
+[ext_resource type="Script" path="res://item_data/ingots/ingot_resource.gd" id="1_uglly"]
+
+[resource]
+script = ExtResource("1_uglly")
+type = 9
+string_name = "adamantite ingot"

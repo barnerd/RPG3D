@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="RecipeResource" load_steps=6 format=3 uid="uid://c03o45kietmpu"]
+
+[ext_resource type="Resource" path="res://skill_data/metalsmithing_skill.tres" id="1_n6usj"]
+[ext_resource type="Script" path="res://item_data/item_resource.gd" id="2_l8q31"]
+[ext_resource type="Resource" path="res://item_data/ingots/mithril_ingot.tres" id="3_820ro"]
+[ext_resource type="Script" path="res://item_data/recipe_resource.gd" id="3_fl2dr"]
+[ext_resource type="Resource" path="res://item_data/equipment/armor/gloves/mithril_gauntlets.tres" id="4_twoj0"]
+
+[resource]
+script = ExtResource("3_fl2dr")
+associated_skill = ExtResource("1_n6usj")
+skill_experience = 12.0
+input_items = Array[ExtResource("2_l8q31")]([ExtResource("3_820ro")])
+output_items = Array[ExtResource("2_l8q31")]([ExtResource("4_twoj0")])
+string_name = "mithril gauntlets"

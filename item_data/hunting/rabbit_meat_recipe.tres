@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="RecipeResource" load_steps=6 format=3 uid="uid://dv2e26eqrj8su"]
+
+[ext_resource type="Resource" uid="uid://bj66petl0d3xt" path="res://skill_data/cooking_skill.tres" id="1_ef507"]
+[ext_resource type="Script" path="res://item_data/item_resource.gd" id="2_qhotp"]
+[ext_resource type="Resource" uid="uid://df6504gwa3i1q" path="res://item_data/hunting/raw_rabbit_meat.tres" id="3_f2v6g"]
+[ext_resource type="Resource" uid="uid://8ogfe76ap31g" path="res://item_data/food/rabbit_meat.tres" id="4_txavh"]
+[ext_resource type="Script" path="res://item_data/recipe_resource.gd" id="5_i0jtr"]
+
+[resource]
+script = ExtResource("5_i0jtr")
+associated_skill = ExtResource("1_ef507")
+skill_experience = 5.0
+input_items = Array[ExtResource("2_qhotp")]([ExtResource("3_f2v6g")])
+output_items = Array[ExtResource("2_qhotp")]([ExtResource("4_txavh")])
+string_name = "rabbit meat"
